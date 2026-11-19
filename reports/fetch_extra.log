@@ -1,0 +1,31 @@
+pomegranate: Anthracnose=571, Fruit_borer=555, Sunburn=391, healthy=661
+plantdoc: Apple_scab=86, Cedar_apple_rust=79, healthy=78, healthy=102, healthy=47, Cercospora_leaf_spot Gray_leaf_spot=62, Common_rust=106, Northern_Leaf_Blight=179, Black_rot=59, healthy=56, healthy=98, Bacterial_spot=62, healthy=55, Early_blight=105, Late_blight=96, healthy=112, healthy=58, Powdery_mildew=124, healthy=87, Bacterial_spot=102, Early_blight=79, Late_blight=100, Leaf_Mold=87, Septoria_leaf_spot=138, Spider_mites Two-spotted_spider_mite=2, Tomato_Yellow_Leaf_Curl_Virus=69, Tomato_mosaic_virus=45, healthy=54  (skipped 242 duplicates of the field test set)
+  soybean_insect: train-00000-of-00002.parquet done (1704 images so far)
+  guava: train-00000-of-00004.parquet done (1873 images so far)
+  eggplant_leaf: train-00000-of-00006.parquet done (682 images so far)
+  brinjal_fruit: train-00000-of-00006.parquet done (1216 images so far)
+  soybean_insect: train-00001-of-00002.parquet done (2400 images so far)
+soybean_insect: Caterpillar_damage=800, Diabrotica_beetle_damage=800, healthy=800
+  guava: train-00001-of-00004.parquet done (1873 images so far)
+  eggplant_leaf: train-00001-of-00006.parquet done (800 images so far)
+  brinjal_fruit: train-00001-of-00006.parquet done (1216 images so far)
+--- resumed 2026-11-14 21:35:05 ---
+  carambola: train-00000-of-00005.parquet done (524 images so far)
+  brinjal_fruit: train-00002-of-00006.parquet done (1216 images so far)
+  guava: train-00002-of-00004.parquet done (1873 images so far)
+  eggplant_leaf: train-00002-of-00006.parquet done (1395 images so far)
+  brinjal_fruit: train-00003-of-00006.parquet done (1216 images so far)
+  brinjal_fruit: train-00004-of-00006.parquet done (1520 images so far)
+  brinjal_fruit: train-00005-of-00006.parquet done (1823 images so far)
+brinjal_fruit: Fruit_cracking=200, Phomopsis_blight=161, Shoot_and_fruit_borer=725, Wet_rot=223, healthy=514
+  carambola: train-00001-of-00005.parquet done (1048 images so far)
+  eggplant_leaf: train-00003-of-00006.parquet done (2076 images so far)
+  guava: train-00003-of-00004.parquet done (2040 images so far)
+guava: Anthracnose=500, Canker=192, Rust=167, Scab=119, Styler_end_rot=262, healthy=800
+  carambola: train-00002-of-00005.parquet done (1176 images so far)
+  eggplant_leaf: train-00004-of-00006.parquet done (2330 images so far)
+  carambola: train-00003-of-00005.parquet done (1318 images so far)
+  eggplant_leaf: train-00005-of-00006.parquet done (2876 images so far)
+eggplant_leaf: Insect_pest_damage=546, Leaf_spot=602, Mosaic_virus=800, White_mold=63, Wilt=65, healthy=800
+  carambola: train-00004-of-00005.parquet done (1318 images so far)
+carambola: Insect_damage=518, healthy=800
