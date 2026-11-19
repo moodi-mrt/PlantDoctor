@@ -1,0 +1,223 @@
+{
+ "n_images": 221,
+ "top1_acc": 0.3167420814479638,
+ "top5_acc": 0.6289592760180995,
+ "crop_acc": 0.5158371040723982,
+ "share_flagged_low_conf": 0.7420814479638009,
+ "acc_when_confident": 0.5087719298245614,
+ "acc_when_flagged": 0.25,
+ "per_class": {
+  "Apple Scab Leaf": {
+   "n": 7,
+   "top1": 0.14285714285714285,
+   "top5": 0.2857142857142857,
+   "crop": 0.14285714285714285
+  },
+  "Apple leaf": {
+   "n": 9,
+   "top1": 0.4444444444444444,
+   "top5": 0.7777777777777778,
+   "crop": 0.4444444444444444
+  },
+  "Apple rust leaf": {
+   "n": 10,
+   "top1": 0.1,
+   "top5": 0.4,
+   "crop": 0.1
+  },
+  "Bell_pepper leaf spot": {
+   "n": 9,
+   "top1": 0.3333333333333333,
+   "top5": 0.7777777777777778,
+   "crop": 0.6666666666666666
+  },
+  "Bell_pepper leaf": {
+   "n": 7,
+   "top1": 0.8571428571428571,
+   "top5": 1.0,
+   "crop": 0.8571428571428571
+  },
+  "Blueberry leaf": {
+   "n": 11,
+   "top1": 0.6363636363636364,
+   "top5": 0.6363636363636364,
+   "crop": 0.6363636363636364
+  },
+  "Cherry leaf": {
+   "n": 10,
+   "top1": 0.0,
+   "top5": 0.5,
+   "crop": 0.0
+  },
+  "Corn Gray leaf spot": {
+   "n": 4,
+   "top1": 0.5,
+   "top5": 0.5,
+   "crop": 0.75
+  },
+  "Corn leaf blight": {
+   "n": 11,
+   "top1": 0.18181818181818182,
+   "top5": 1.0,
+   "crop": 0.9090909090909091
+  },
+  "Corn rust leaf": {
+   "n": 10,
+   "top1": 0.3,
+   "top5": 0.9,
+   "crop": 1.0
+  },
+  "Peach leaf": {
+   "n": 9,
+   "top1": 0.0,
+   "top5": 0.5555555555555556,
+   "crop": 0.2222222222222222
+  },
+  "Potato leaf early blight": {
+   "n": 8,
+   "top1": 0.25,
+   "top5": 0.625,
+   "crop": 0.625
+  },
+  "Potato leaf late blight": {
+   "n": 8,
+   "top1": 0.0,
+   "top5": 0.625,
+   "crop": 0.25
+  },
+  "Raspberry leaf": {
+   "n": 7,
+   "top1": 1.0,
+   "top5": 1.0,
+   "crop": 1.0
+  },
+  "Soyabean leaf": {
+   "n": 7,
+   "top1": 0.0,
+   "top5": 0.5714285714285714,
+   "crop": 0.0
+  },
+  "Squash Powdery mildew leaf": {
+   "n": 6,
+   "top1": 0.8333333333333334,
+   "top5": 1.0,
+   "crop": 0.8333333333333334
+  },
+  "Strawberry leaf": {
+   "n": 8,
+   "top1": 0.0,
+   "top5": 0.25,
+   "crop": 0.125
+  },
+  "Tomato Early blight leaf": {
+   "n": 9,
+   "top1": 0.4444444444444444,
+   "top5": 0.7777777777777778,
+   "crop": 0.4444444444444444
+  },
+  "Tomato Septoria leaf spot": {
+   "n": 11,
+   "top1": 0.18181818181818182,
+   "top5": 0.6363636363636364,
+   "crop": 0.6363636363636364
+  },
+  "Tomato leaf bacterial spot": {
+   "n": 7,
+   "top1": 0.14285714285714285,
+   "top5": 0.14285714285714285,
+   "crop": 0.2857142857142857
+  },
+  "Tomato leaf late blight": {
+   "n": 9,
+   "top1": 0.4444444444444444,
+   "top5": 0.7777777777777778,
+   "crop": 0.6666666666666666
+  },
+  "Tomato leaf mosaic virus": {
+   "n": 9,
+   "top1": 0.0,
+   "top5": 0.2222222222222222,
+   "crop": 0.1111111111111111
+  },
+  "Tomato leaf yellow virus": {
+   "n": 6,
+   "top1": 0.5,
+   "top5": 0.6666666666666666,
+   "crop": 0.5
+  },
+  "Tomato leaf": {
+   "n": 8,
+   "top1": 0.0,
+   "top5": 0.25,
+   "crop": 0.625
+  },
+  "Tomato mold leaf": {
+   "n": 4,
+   "top1": 0.0,
+   "top5": 0.0,
+   "crop": 0.5
+  },
+  "grape leaf black rot": {
+   "n": 5,
+   "top1": 0.8,
+   "top5": 0.8,
+   "crop": 0.8
+  },
+  "grape leaf": {
+   "n": 12,
+   "top1": 0.75,
+   "top5": 0.8333333333333334,
+   "crop": 0.8333333333333334
+  }
+ },
+ "top_confusions": [
+  [
+   "Corn: Northern Leaf Blight  \u203a  Corn: Cercospora leaf spot Gray leaf spot",
+   8
+  ],
+  [
+   "Soybean: Healthy  \u203a  Blueberry: Healthy",
+   6
+  ],
+  [
+   "Tomato: Tomato mosaic virus  \u203a  \u2014: Background without leaves",
+   6
+  ],
+  [
+   "Corn: Common rust  \u203a  Corn: Cercospora leaf spot Gray leaf spot",
+   5
+  ],
+  [
+   "Tomato: Septoria leaf spot  \u203a  Tomato: Early blight",
+   5
+  ],
+  [
+   "Apple: Apple scab  \u203a  Strawberry: Leaf scorch",
+   4
+  ],
+  [
+   "Cherry: Healthy  \u203a  Blueberry: Healthy",
+   4
+  ],
+  [
+   "Peach: Healthy  \u203a  Blueberry: Healthy",
+   4
+  ],
+  [
+   "Potato: Late blight  \u203a  Tomato: Late blight",
+   4
+  ],
+  [
+   "Bell pepper: Bacterial spot  \u203a  Bell pepper: Healthy",
+   3
+  ],
+  [
+   "Cherry: Healthy  \u203a  Apple: Healthy",
+   3
+  ],
+  [
+   "Potato: Early blight  \u203a  Potato: Late blight",
+   3
+  ]
+ ]
+}

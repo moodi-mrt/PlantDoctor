@@ -1,0 +1,38 @@
+{
+  "contract": "design/DESIGN_CONTRACT.md — diagnostic workspace; primary action: provide a leaf image; scan order verdict > confidence vs 40/70% thresholds > actions > alternatives; WCAG 2.2 AA; light + dark; no new dependencies.",
+  "targetViewports": ["390x844", "1440x900"],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "tools/ui_gate.py audit at both viewports in empty, success (light + dark), error and offline states: 0 text-contrast failures (computed against nearest opaque background; --text-3 raised to 5.3:1 light / 5.5:1 dark), 0 interactive targets under 24x24 px (opacity slider raised from 16 px to 32 px), 0 unnamed controls, 0 images without alt. Keyboard: first 12 Tab stops in logical order starting with the skip link, every stop showed a visible focus ring. Diagnosis result announced via role=status ('Diagnosis complete. Confident match: Tomato, Late blight, 92.6% confidence.'). Heatmap toggle exposes aria-pressed. Offline status no longer colour-only on mobile (dot + 'Offline' text). Reduced-motion media query disables all animation/transition. Not tested: real screen reader (Orca/NVDA) and 400% browser zoom."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "No horizontal overflow at 390 px or 1440 px in any state. 390 px: single column, KPIs 2x2, differential table drops the crop column, report sections stack, 'Offline'/'Online' short status label. 1440 px: 340 px sticky input panel + report, coverage cards in masonry columns without empty gaps, headline on one line. Fixed during review: page-header bottom padding was reset by .container shorthand on mobile (now padding-inline)."
+  },
+  "contentStates": {
+    "loading": { "status": "pass", "evidence": "Skeleton + dimmed preview with scan line; report aria-busy=true; 'Analysing image…' announced. Cancellation intentionally not offered: inference is under 0.5 s (40–76 ms warm)." },
+    "empty": { "status": "pass", "evidence": "Illustration, 'No image analysed yet' and next action (upload or pick a sample); samples block hidden when the server provides none." },
+    "error": { "status": "pass", "evidence": "Non-image renamed .jpg rejected by server; inline panel 'We couldn't analyse that image' with the specific server message, 'Choose another image' and 'Back to last report' (shown only when a previous report exists). Client-side checks give specific messages for non-images and files over 15 MB; network failure says the server isn't responding and how to start it." },
+    "partial": { "status": "pass", "evidence": "(a) Report reopened from history: 'Original' view disabled and caption explains the photo isn't stored. (b) /api/info blocked: pill 'Model offline'/'Offline', inline note with ./run.sh, KPIs show 'N/A' with tooltip, coverage text explains unavailability. (c) Missing metrics files: model card shows N/A with the command to generate them (code path reviewed; not rendered because metrics exist)." },
+    "success": { "status": "pass", "evidence": "Report ID, timestamp, latency, status badge, verdict, threshold meter, cause, symptoms, numbered actions, top-5 table; next actions 'New' and 'Print / PDF'; heatmap with opacity slider; entry added to Recent." },
+    "permission": { "status": "not-applicable", "reason": "Local single-user app with no accounts, roles or protected data; camera is not requested (file input only), so no permission boundary exists to communicate." }
+  },
+  "renderedEvidence": [
+    { "viewport": "390x844", "artifact": "390x844-1-empty.png", "observation": "Empty state; header with icon theme button and status pill; KPIs 2x2; samples grid 3 across." },
+    { "viewport": "390x844", "artifact": "390x844-2-loading.png", "observation": "Loading skeleton with dimmed preview and scan line." },
+    { "viewport": "390x844", "artifact": "390x844-3-success.png", "observation": "Full-page success: single column, meter with threshold labels fits, table without crop column, no overflow." },
+    { "viewport": "390x844", "artifact": "390x844-4-heatmap.png", "observation": "Heatmap view with pressed toggle and slider." },
+    { "viewport": "390x844", "artifact": "390x844-5-success-dark.png", "observation": "Dark theme success; contrast audit clean." },
+    { "viewport": "390x844", "artifact": "390x844-6-error.png", "observation": "Inline error panel with both recovery actions." },
+    { "viewport": "390x844", "artifact": "390x844-7-partial-history.png", "observation": "History reopen: Original disabled, explanatory caption." },
+    { "viewport": "390x844", "artifact": "390x844-8-partial-offline.png", "observation": "Offline: red dot plus 'Offline' text, N/A KPIs, spacing between KPI card and panel restored." },
+    { "viewport": "1440x900", "artifact": "1440x900-1-empty.png", "observation": "Two-panel workspace, one-line headline, KPI strip." },
+    { "viewport": "1440x900", "artifact": "1440x900-2-loading.png", "observation": "Loading state inside report panel." },
+    { "viewport": "1440x900", "artifact": "1440x900-3-success.png", "observation": "Full-page success including masonry coverage and model card." },
+    { "viewport": "1440x900", "artifact": "1440x900-4-heatmap.png", "observation": "Heatmap concentrated on the lesion; slider beside toggle." },
+    { "viewport": "1440x900", "artifact": "1440x900-5-success-dark.png", "observation": "Dark theme full page." },
+    { "viewport": "1440x900", "artifact": "1440x900-6-error.png", "observation": "Centered error panel; 'Back to last report' available." },
+    { "viewport": "1440x900", "artifact": "1440x900-7-partial-history.png", "observation": "Partial report from history." },
+    { "viewport": "1440x900", "artifact": "1440x900-8-partial-offline.png", "observation": "'Model offline' pill and inline note in empty state." }
+  ]
+}

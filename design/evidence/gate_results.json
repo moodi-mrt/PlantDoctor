@@ -1,0 +1,245 @@
+{
+ "390x844": {
+  "shots": {
+   "empty": "390x844-1-empty.png",
+   "loading": "390x844-2-loading.png",
+   "success": "390x844-3-success.png",
+   "heatmap": "390x844-4-heatmap.png",
+   "success_dark": "390x844-5-success-dark.png",
+   "error": "390x844-6-error.png",
+   "partial_history": "390x844-7-partial-history.png",
+   "partial_offline": "390x844-8-partial-offline.png"
+  },
+  "audits": {
+   "empty": {
+    "vw": 390,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "success": {
+    "vw": 390,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "success_dark": {
+    "vw": 390,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "error": {
+    "vw": 390,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "partial_offline": {
+    "vw": 390,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   }
+  },
+  "states": {
+   "empty": true,
+   "loading": true,
+   "success_announce": "Diagnosis complete. Confident match: Tomato, Late blight, 92.6% confidence.",
+   "heat_pressed": "true",
+   "error_msg": "That file isn't a readable image (use JPG, PNG or WebP).",
+   "error_back_available": true,
+   "partial_history": {
+    "originalDisabled": true,
+    "caption": "Reopened from history: the original photo isn't stored, so only the heatmap is shown. Re-upload the image for the full view."
+   },
+   "partial_offline": {
+    "pill": "Offline",
+    "note": true,
+    "kpi": "N/A"
+   }
+  },
+  "keyboard": [
+   {
+    "name": "Skip to diagnosis",
+    "ring": true
+   },
+   {
+    "name": "PlantDoctor home",
+    "ring": true
+   },
+   {
+    "name": "Switch to dark theme",
+    "ring": true
+   },
+   {
+    "name": "Drop a leaf image or browse files Press ",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Tomato late blight, field ph",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Tomato early blight, lab pho",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Apple cedar apple rust, lab ",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Corn common rust, lab photo",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Grape black rot, lab photo",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Potato late blight, lab phot",
+    "ring": true
+   },
+   {
+    "name": "Technical report (PDF)",
+    "ring": true
+   },
+   {
+    "name": "API",
+    "ring": true
+   }
+  ]
+ },
+ "1440x900": {
+  "shots": {
+   "empty": "1440x900-1-empty.png",
+   "loading": "1440x900-2-loading.png",
+   "success": "1440x900-3-success.png",
+   "heatmap": "1440x900-4-heatmap.png",
+   "success_dark": "1440x900-5-success-dark.png",
+   "error": "1440x900-6-error.png",
+   "partial_history": "1440x900-7-partial-history.png",
+   "partial_offline": "1440x900-8-partial-offline.png"
+  },
+  "audits": {
+   "empty": {
+    "vw": 1440,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "success": {
+    "vw": 1440,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "success_dark": {
+    "vw": 1440,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "error": {
+    "vw": 1440,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   },
+   "partial_offline": {
+    "vw": 1440,
+    "overflowX": false,
+    "contrastFails": [],
+    "smallTargets": [],
+    "unnamed": [],
+    "imgsNoAlt": []
+   }
+  },
+  "states": {
+   "empty": true,
+   "loading": true,
+   "success_announce": "Diagnosis complete. Confident match: Tomato, Late blight, 92.6% confidence.",
+   "heat_pressed": "true",
+   "error_msg": "That file isn't a readable image (use JPG, PNG or WebP).",
+   "error_back_available": true,
+   "partial_history": {
+    "originalDisabled": true,
+    "caption": "Reopened from history: the original photo isn't stored, so only the heatmap is shown. Re-upload the image for the full view."
+   },
+   "partial_offline": {
+    "pill": "Model offline",
+    "note": true,
+    "kpi": "N/A"
+   }
+  },
+  "keyboard": [
+   {
+    "name": "Skip to diagnosis",
+    "ring": true
+   },
+   {
+    "name": "PlantDoctor home",
+    "ring": true
+   },
+   {
+    "name": "Diagnose",
+    "ring": true
+   },
+   {
+    "name": "Coverage",
+    "ring": true
+   },
+   {
+    "name": "Model",
+    "ring": true
+   },
+   {
+    "name": "Switch to dark theme",
+    "ring": true
+   },
+   {
+    "name": "Drop a leaf image or browse files Press ",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Tomato late blight, field ph",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Tomato early blight, lab pho",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Apple cedar apple rust, lab ",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Corn common rust, lab photo",
+    "ring": true
+   },
+   {
+    "name": "Try sample: Grape black rot, lab photo",
+    "ring": true
+   }
+  ]
+ },
+ "js_exceptions": []
+}
