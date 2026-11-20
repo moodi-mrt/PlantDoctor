@@ -1,0 +1,12 @@
+.venv
+data
+runs
+**/node_modules
+frontend/dist
+frontend/test-results
+.git
+__pycache__
+*.pyc
+models/*_v1_*.pt
+server.log
+.env

@@ -1,0 +1,734 @@
+{
+ "n": 22619,
+ "accuracy": 0.014810557495910518,
+ "top5_accuracy": 0.03200848843892303,
+ "macro_precision": 0.00014509803921568628,
+ "macro_recall": 0.00980392156862745,
+ "macro_f1": 0.00028616482752376023,
+ "weighted_f1": 0.0004323025843974926,
+ "ece": 0.0,
+ "nll": NaN,
+ "reliability": [],
+ "per_class": {
+  "000_rice_leaf_roller": {
+   "precision": 0.0148,
+   "recall": 1.0,
+   "f1": 0.0292,
+   "support": 335,
+   "accuracy": 1.0
+  },
+  "001_rice_leaf_caterpillar": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 147,
+   "accuracy": 0.0
+  },
+  "002_paddy_stem_maggot": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 79,
+   "accuracy": 0.0
+  },
+  "003_asiatic_rice_borer": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 316,
+   "accuracy": 0.0
+  },
+  "004_yellow_rice_borer": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 152,
+   "accuracy": 0.0
+  },
+  "005_rice_gall_midge": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 152,
+   "accuracy": 0.0
+  },
+  "006_Rice_Stemfly": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 111,
+   "accuracy": 0.0
+  },
+  "007_brown_plant_hopper": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 251,
+   "accuracy": 0.0
+  },
+  "008_white_backed_plant_hopper": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 268,
+   "accuracy": 0.0
+  },
+  "009_small_brown_plant_hopper": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 166,
+   "accuracy": 0.0
+  },
+  "010_rice_water_weevil": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 257,
+   "accuracy": 0.0
+  },
+  "011_rice_leafhopper": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 122,
+   "accuracy": 0.0
+  },
+  "012_grain_spreader_thrips": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 52,
+   "accuracy": 0.0
+  },
+  "013_rice_shell_pest": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 123,
+   "accuracy": 0.0
+  },
+  "014_grub": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 258,
+   "accuracy": 0.0
+  },
+  "015_mole_cricket": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 495,
+   "accuracy": 0.0
+  },
+  "016_wireworm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 267,
+   "accuracy": 0.0
+  },
+  "017_white_margined_moth": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 45,
+   "accuracy": 0.0
+  },
+  "018_black_cutworm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 257,
+   "accuracy": 0.0
+  },
+  "019_large_cutworm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 148,
+   "accuracy": 0.0
+  },
+  "020_yellow_cutworm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 144,
+   "accuracy": 0.0
+  },
+  "021_red_spider": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 159,
+   "accuracy": 0.0
+  },
+  "022_corn_borer": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 510,
+   "accuracy": 0.0
+  },
+  "023_army_worm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 322,
+   "accuracy": 0.0
+  },
+  "024_aphids": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 1229,
+   "accuracy": 0.0
+  },
+  "025_Potosiabre_vitarsis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 170,
+   "accuracy": 0.0
+  },
+  "026_peach_borer": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 208,
+   "accuracy": 0.0
+  },
+  "027_english_grain_aphid": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 197,
+   "accuracy": 0.0
+  },
+  "028_green_bug": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 98,
+   "accuracy": 0.0
+  },
+  "029_bird_cherry_oataphid": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 213,
+   "accuracy": 0.0
+  },
+  "030_wheat_blossom_midge": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 146,
+   "accuracy": 0.0
+  },
+  "031_penthaleus_major": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 70,
+   "accuracy": 0.0
+  },
+  "032_longlegged_spider_mite": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 74,
+   "accuracy": 0.0
+  },
+  "033_wheat_phloeothrips": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 88,
+   "accuracy": 0.0
+  },
+  "034_wheat_sawfly": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 102,
+   "accuracy": 0.0
+  },
+  "035_cerodonta_denticornis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 42,
+   "accuracy": 0.0
+  },
+  "036_beet_fly": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 32,
+   "accuracy": 0.0
+  },
+  "037_flea_beetle": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 237,
+   "accuracy": 0.0
+  },
+  "038_cabbage_army_worm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 257,
+   "accuracy": 0.0
+  },
+  "039_beet_army_worm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 482,
+   "accuracy": 0.0
+  },
+  "040_Beet_spot_flies": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 90,
+   "accuracy": 0.0
+  },
+  "041_meadow_moth": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 81,
+   "accuracy": 0.0
+  },
+  "042_beet_weevil": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 93,
+   "accuracy": 0.0
+  },
+  "043_sericaorient_alismots_chulsky": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 58,
+   "accuracy": 0.0
+  },
+  "044_alfalfa_weevil": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 158,
+   "accuracy": 0.0
+  },
+  "045_flax_budworm": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 320,
+   "accuracy": 0.0
+  },
+  "046_alfalfa_plant_bug": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 197,
+   "accuracy": 0.0
+  },
+  "047_tarnished_plant_bug": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 246,
+   "accuracy": 0.0
+  },
+  "048_Locustoidea": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 419,
+   "accuracy": 0.0
+  },
+  "049_lytta_polita": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 197,
+   "accuracy": 0.0
+  },
+  "050_legume_blister_beetle": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 423,
+   "accuracy": 0.0
+  },
+  "051_blister_beetle": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 570,
+   "accuracy": 0.0
+  },
+  "052_therioaphis_maculata_Buckton": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 78,
+   "accuracy": 0.0
+  },
+  "053_odontothrips_loti": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 54,
+   "accuracy": 0.0
+  },
+  "054_Thrips": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 264,
+   "accuracy": 0.0
+  },
+  "055_alfalfa_seed_chalcid": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 56,
+   "accuracy": 0.0
+  },
+  "056_Pieris_canidia": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 141,
+   "accuracy": 0.0
+  },
+  "057_Apolygus_lucorum": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 115,
+   "accuracy": 0.0
+  },
+  "058_Limacodidae": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 421,
+   "accuracy": 0.0
+  },
+  "059_Viteus_vitifoliae": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 107,
+   "accuracy": 0.0
+  },
+  "060_Colomerus_vitis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 53,
+   "accuracy": 0.0
+  },
+  "061_Brevipoalpus_lewisi_McGregor": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 24,
+   "accuracy": 0.0
+  },
+  "062_oides_decempunctata": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 85,
+   "accuracy": 0.0
+  },
+  "063_Polyphagotars_onemus_latus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 26,
+   "accuracy": 0.0
+  },
+  "064_Pseudococcus_comstocki_Kuwana": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 93,
+   "accuracy": 0.0
+  },
+  "065_parathrene_regalis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 42,
+   "accuracy": 0.0
+  },
+  "066_Ampelophaga": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 230,
+   "accuracy": 0.0
+  },
+  "067_Lycorma_delicatula": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 1594,
+   "accuracy": 0.0
+  },
+  "068_Xylotrechus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 345,
+   "accuracy": 0.0
+  },
+  "069_Cicadella_viridis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 384,
+   "accuracy": 0.0
+  },
+  "070_Miridae": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 1525,
+   "accuracy": 0.0
+  },
+  "071_Trialeurodes_vaporariorum": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 208,
+   "accuracy": 0.0
+  },
+  "072_Erythroneura_apicalis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 22,
+   "accuracy": 0.0
+  },
+  "073_Papilio_xuthus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 135,
+   "accuracy": 0.0
+  },
+  "074_Panonchus_citri_McGregor": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 116,
+   "accuracy": 0.0
+  },
+  "075_Phyllocoptes_oleiverus_ashmead": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 52,
+   "accuracy": 0.0
+  },
+  "076_Icerya_purchasi_Maskell": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 217,
+   "accuracy": 0.0
+  },
+  "077_Unaspis_yanonensis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 126,
+   "accuracy": 0.0
+  },
+  "078_Ceroplastes_rubens": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 78,
+   "accuracy": 0.0
+  },
+  "079_Chrysomphalus_aonidum": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 68,
+   "accuracy": 0.0
+  },
+  "080_Parlatoria_zizyphus_Lucus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 23,
+   "accuracy": 0.0
+  },
+  "081_Nipaecoccus_vastalor": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 30,
+   "accuracy": 0.0
+  },
+  "082_Aleurocanthus_spiniferus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 208,
+   "accuracy": 0.0
+  },
+  "083_Tetradacus_c_Bactrocera_minax": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 117,
+   "accuracy": 0.0
+  },
+  "084_Dacus_dorsalis_Hendel": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 132,
+   "accuracy": 0.0
+  },
+  "085_Bactrocera_tsuneonis": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 51,
+   "accuracy": 0.0
+  },
+  "086_Prodenia_litura": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 392,
+   "accuracy": 0.0
+  },
+  "087_Adristyrannus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 94,
+   "accuracy": 0.0
+  },
+  "088_Phyllocnistis_citrella_Stainton": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 122,
+   "accuracy": 0.0
+  },
+  "089_Toxoptera_citricidus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 57,
+   "accuracy": 0.0
+  },
+  "090_Toxoptera_aurantii": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 68,
+   "accuracy": 0.0
+  },
+  "091_Aphis_citricola_Vander_Goot": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 106,
+   "accuracy": 0.0
+  },
+  "092_Scirtothrips_dorsalis_Hood": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 243,
+   "accuracy": 0.0
+  },
+  "093_Dasineura_sp": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 152,
+   "accuracy": 0.0
+  },
+  "094_Lawana_imitata_Melichar": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 174,
+   "accuracy": 0.0
+  },
+  "095_Salurnis_marginella_Guerr": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 147,
+   "accuracy": 0.0
+  },
+  "096_Deporaus_marginatus_Pascoe": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 63,
+   "accuracy": 0.0
+  },
+  "097_Chlumetia_transversa": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 92,
+   "accuracy": 0.0
+  },
+  "098_Mango_flat_beak_leafhopper": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 28,
+   "accuracy": 0.0
+  },
+  "099_Rhytidodera_bowrinii_white": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 167,
+   "accuracy": 0.0
+  },
+  "100_Sternochetus_frigidus": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 138,
+   "accuracy": 0.0
+  },
+  "101_Cicadellidae": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "support": 1723,
+   "accuracy": 0.0
+  }
+ },
+ "roc_auc_ovr_macro": 0.5374739776036492,
+ "temperature": NaN,
+ "ece_uncalibrated": 0.0332099867376837,
+ "train_minutes": 84.4,
+ "latency_ms_gpu": 6.692564833307794,
+ "latency_ms_cpu": 17.515528100193478
+}

@@ -1,0 +1,715 @@
+# Tomato, potato, pepper, chili, eggplant, cucumber, squash, onion.
+
+# ───────────── Tomato ─────────────
+Tomato___Early_blight:
+  name: Early blight
+  kind: fungal
+  pathogen: Alternaria linariae (A. solani)
+  parts: [older leaves, stems, fruit]
+  symptoms: Brown spots with concentric 'target' rings and yellow surrounding tissue, starting on older lower leaves; dark sunken lesions at the stem end of fruit.
+  causes: Fungus surviving on infected debris and solanaceous weeds; spread by rain splash.
+  conditions: Warm (24–29 °C) weather with rain or heavy dew; stressed, poorly fed plants.
+  risk: {t: [20, 30], rh: 90, hours: 10}
+  immediate:
+    - "Remove and destroy infected lower leaves (do not compost)."
+    - "Stop overhead watering."
+  organic:
+    - "Mulch to stop soil splash; stake and prune for airflow."
+    - "Copper-based sprays are allowed in many organic programmes (check certification rules)."
+  chemical:
+    - {ai: chlorothalonil, group: FRAC M05}
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: azoxystrobin, group: FRAC 11}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Rotate 2–3 years away from tomato, potato, eggplant and pepper."
+    - "Use tolerant varieties and healthy transplants."
+    - "Keep plants well fed — early blight hits stressed plants hardest."
+  refs: [ucipm_tomato, pv_tomato]
+
+Tomato___Late_blight:
+  name: Late blight
+  kind: oomycete
+  pathogen: Phytophthora infestans
+  parts: [leaves, stems, fruit]
+  symptoms: Large, irregular grey-green to brown greasy patches; white mould on leaf undersides in humid mornings; firm brown rot on fruit. Can destroy a crop within a week.
+  causes: Spores blown from infected tomato or potato crops; infected potato tubers.
+  conditions: Cool (10–25 °C), very humid or wet weather, especially several days in a row.
+  risk: {t: [10, 25], rh: 90, hours: 10}
+  immediate:
+    - "Act the same day — remove and bag infected plants; do not compost."
+    - "Warn neighbouring tomato and potato growers."
+    - "Protect healthy plants before the next wet spell."
+  organic:
+    - "Copper sprays protect healthy foliage but do not cure infected tissue."
+    - "Keep foliage dry; space plants."
+  chemical:
+    - {ai: mancozeb (protectant), group: FRAC M03}
+    - {ai: chlorothalonil (protectant), group: FRAC M05}
+    - {ai: cymoxanil + mancozeb, group: FRAC 27 + M03}
+    - {ai: dimethomorph, group: FRAC 40}
+    - {ai: mandipropamid, group: FRAC 40}
+    - {ai: metalaxyl-M + mancozeb, group: FRAC 4 + M03, note: resistance common — never use alone or repeatedly}
+  preventive:
+    - "Plant resistant varieties where available."
+    - "Destroy potato cull piles and volunteers."
+    - "Follow late-blight forecasts in cool wet seasons."
+  refs: [ucipm_tomato, pv_tomato]
+
+Tomato___Bacterial_spot:
+  name: Bacterial spot
+  kind: bacterial
+  pathogen: Xanthomonas spp. (X. euvesicatoria, X. perforans, X. vesicatoria, X. gardneri)
+  parts: [leaves, stems, fruit]
+  symptoms: Small, dark, greasy spots on leaves (sometimes with yellow halos); raised scabby spots on fruit.
+  causes: Seed-borne and transplant-borne bacteria spread by rain splash and handling.
+  conditions: Warm (24–30 °C), wet, windy weather.
+  risk: {t: [24, 32], rh: 85, hours: 12}
+  immediate:
+    - "Avoid working in plants when wet; remove badly infected plants."
+  organic:
+    - "Hot-water-treated or certified seed; clean transplants."
+    - "Copper sprays slow spread (resistance in some strains)."
+  chemical:
+    - {ai: copper hydroxide / copper oxychloride, group: FRAC M01}
+    - {ai: copper + mancozeb, group: FRAC M01 + M03}
+  preventive:
+    - "Rotate 2–3 years away from tomato and pepper; avoid overhead irrigation."
+  refs: [ucipm_tomato, pv_tomato]
+
+Tomato___Septoria_leaf_spot:
+  name: Septoria leaf spot
+  kind: fungal
+  pathogen: Septoria lycopersici
+  parts: [leaves]
+  symptoms: Many small circular spots with dark borders and light grey centres containing tiny black dots.
+  causes: Fungus on debris and solanaceous weeds; rain splash.
+  conditions: Mild, wet weather.
+  risk: {t: [18, 27], rh: 90, hours: 12}
+  immediate:
+    - "Remove infected lower leaves."
+  organic:
+    - "Mulch; avoid overhead watering; remove debris at season end."
+  chemical:
+    - {ai: chlorothalonil, group: FRAC M05}
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: copper, group: FRAC M01}
+  preventive:
+    - "Rotation; weed control."
+  refs: [ucipm_tomato, pv_tomato]
+
+Tomato___Leaf_Mold:
+  name: Leaf mould
+  kind: fungal
+  pathogen: Passalora fulva (Cladosporium fulvum)
+  parts: [leaves]
+  symptoms: Pale yellow spots on upper leaf surface with olive-green to brown velvety mould beneath.
+  causes: Airborne spores in humid, enclosed environments.
+  conditions: Relative humidity above about 85 %, typical of tunnels and greenhouses.
+  risk: {t: [18, 28], rh: 85, hours: 16}
+  immediate:
+    - "Ventilate tunnels; remove infected leaves."
+  organic:
+    - "Reduce humidity; prune lower leaves; avoid wetting leaves."
+  chemical:
+    - {ai: chlorothalonil, group: FRAC M05}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Resistant varieties; good ventilation."
+  refs: [ucipm_tomato, pv_tomato]
+
+Tomato___Target_Spot:
+  name: Target spot
+  kind: fungal
+  pathogen: Corynespora cassiicola
+  parts: [leaves, stems, fruit]
+  symptoms: Brown lesions with concentric rings and yellow halo; easily confused with early blight.
+  causes: Fungus on debris.
+  conditions: Warm, humid weather.
+  risk: {t: [20, 30], rh: 90, hours: 12}
+  immediate:
+    - "Remove lower infected leaves; improve airflow."
+  organic:
+    - "Rotation; debris removal."
+  chemical:
+    - {ai: chlorothalonil, group: FRAC M05}
+    - {ai: azoxystrobin + difenoconazole, group: FRAC 11 + 3}
+  preventive:
+    - "Avoid dense canopies."
+  refs: [pv_tomato]
+
+Tomato___Spider_mites Two-spotted_spider_mite:
+  name: Two-spotted spider mite
+  kind: pest
+  pathogen: Tetranychus urticae
+  parts: [leaves]
+  symptoms: Fine yellow stippling, bronzing, and fine webbing on leaf undersides.
+  causes: Mites multiplying rapidly; often flare after broad-spectrum insecticides kill predators.
+  conditions: Hot, dry, dusty conditions.
+  risk: {t: [28, 45], rh_max: 50, hours: 24}
+  immediate:
+    - "Check leaf undersides with a hand lens."
+    - "Spray undersides with water to knock mites off."
+  organic:
+    - "Insecticidal soap or horticultural oil; release predatory mites in tunnels."
+  chemical:
+    - {ai: abamectin, group: IRAC 6}
+    - {ai: spiromesifen, group: IRAC 23}
+    - {ai: fenpyroximate, group: IRAC 21A}
+    - {ai: hexythiazox (eggs/nymphs), group: IRAC 10A}
+  preventive:
+    - "Reduce dust; avoid broad-spectrum insecticides; rotate miticide groups."
+  refs: [ucipm_tomato, pv_tomato]
+
+Tomato___Tomato_Yellow_Leaf_Curl_Virus:
+  name: Tomato yellow leaf curl virus (TYLCV)
+  kind: viral
+  pathogen: Tomato yellow leaf curl virus (begomovirus), spread by whitefly Bemisia tabaci
+  parts: [young leaves, whole plant]
+  symptoms: Upward-curling, small, yellow-edged leaves; stunted plants with few fruit.
+  causes: Virus transmitted by whiteflies.
+  conditions: High whitefly populations in warm weather.
+  immediate:
+    - "No cure — remove and destroy infected plants early."
+    - "Control whiteflies."
+  organic:
+    - "Insect-proof nurseries and tunnels; yellow sticky traps; reflective mulch."
+  chemical:
+    - {ai: pyriproxyfen, group: IRAC 7C}
+    - {ai: spirotetramat, group: IRAC 23}
+    - {ai: flonicamid, group: IRAC 29}
+  preventive:
+    - "Plant TYLCV-resistant varieties; whitefly-free transplants; weed control."
+  refs: [ucipm_tomato, pv_tomato]
+
+Tomato___Tomato_mosaic_virus:
+  name: Tomato mosaic virus (ToMV)
+  kind: viral
+  pathogen: Tomato mosaic virus (tobamovirus)
+  parts: [leaves, fruit]
+  symptoms: Light- and dark-green mottled leaves, sometimes fern-like or distorted; uneven fruit ripening.
+  causes: Very stable virus spread by contact — hands, tools, seed.
+  conditions: Handling plants; contaminated seed.
+  immediate:
+    - "Remove infected plants; wash hands and disinfect tools."
+  organic:
+    - "Do not smoke near plants (tobacco can carry tobamoviruses)."
+  chemical: []
+  preventive:
+    - "Resistant varieties; certified seed."
+  refs: [ucipm_tomato, pv_tomato]
+
+# ───────────── Potato ─────────────
+Potato___Early_blight:
+  name: Early blight
+  kind: fungal
+  pathogen: Alternaria solani
+  parts: [older leaves, stems, tubers]
+  symptoms: Brown spots with concentric rings, usually on older lower leaves first.
+  causes: Fungus surviving on debris and volunteer potatoes.
+  conditions: Warm weather alternating wet and dry; stressed or nutrient-poor crops.
+  risk: {t: [20, 30], rh: 90, hours: 10}
+  immediate:
+    - "Check crop nutrition; protect upper leaves if spots are spreading."
+  organic:
+    - "Remove volunteers and solanaceous weeds; rotate."
+  chemical:
+    - {ai: chlorothalonil, group: FRAC M05}
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: difenoconazole, group: FRAC 3}
+    - {ai: azoxystrobin, group: FRAC 11}
+  preventive:
+    - "Good fertility; certified seed; rotation."
+  refs: [ucipm_potato, pv_potato]
+
+Potato___Late_blight:
+  name: Late blight
+  kind: oomycete
+  pathogen: Phytophthora infestans
+  parts: [leaves, stems, tubers]
+  symptoms: Large dark greasy lesions, white mould under leaves in humid weather; reddish-brown dry rot in tubers. Spreads very fast.
+  causes: Infected seed tubers, cull piles and spores from nearby fields.
+  conditions: Cool, wet weather (fog and rain in the Punjab autumn crop in Dec–Jan).
+  risk: {t: [10, 25], rh: 90, hours: 10}
+  immediate:
+    - "Destroy infected plants immediately (do not compost)."
+    - "Protect the rest of the field before the next wet spell."
+    - "Do not irrigate during high-risk weather."
+  organic:
+    - "Hill soil over tubers; destroy cull piles; copper sprays as protectant."
+  chemical:
+    - {ai: mancozeb (protectant), group: FRAC M03}
+    - {ai: cymoxanil + mancozeb, group: FRAC 27 + M03}
+    - {ai: dimethomorph + mancozeb, group: FRAC 40 + M03}
+    - {ai: mandipropamid, group: FRAC 40}
+    - {ai: metalaxyl-M + mancozeb, group: FRAC 4 + M03, note: resistance common}
+  preventive:
+    - "Certified seed tubers; resistant varieties; follow local blight warnings."
+  refs: [ucipm_potato, pv_potato]
+
+# ───────────── Pepper / chili ─────────────
+Pepper,_bell___Bacterial_spot:
+  name: Bacterial spot
+  kind: bacterial
+  pathogen: Xanthomonas spp.
+  parts: [leaves, fruit]
+  symptoms: Small dark water-soaked leaf spots that turn brown with yellow halos; leaves drop; raised spots on fruit.
+  causes: Seed and transplant-borne bacteria spread by rain splash.
+  conditions: Warm, wet, windy weather.
+  risk: {t: [24, 32], rh: 85, hours: 12}
+  immediate:
+    - "Avoid working in wet plants; remove severely infected plants."
+  organic:
+    - "Certified seed; copper sprays slow spread."
+  chemical:
+    - {ai: copper hydroxide, group: FRAC M01}
+    - {ai: copper + mancozeb, group: FRAC M01 + M03}
+  preventive:
+    - "Rotate 2–3 years away from pepper and tomato."
+  refs: [ucipm_peppers]
+
+Chili___Cercospora_leaf_spot:
+  name: Cercospora leaf spot (frog-eye)
+  kind: fungal
+  pathogen: Cercospora capsici
+  parts: [leaves, stems]
+  symptoms: Round spots with pale grey centres and dark margins ('frog-eye'); leaves yellow and drop.
+  causes: Seed and debris-borne fungus.
+  conditions: Warm, humid weather.
+  risk: {t: [22, 32], rh: 85, hours: 12}
+  immediate:
+    - "Remove infected leaves and debris."
+  organic:
+    - "Avoid overhead irrigation; space plants."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: copper oxychloride, group: FRAC M01}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Clean seed; rotation."
+  refs: [ucipm_peppers]
+
+Chili___Powdery_mildew:
+  name: Powdery mildew
+  kind: fungal
+  pathogen: Leveillula taurica
+  parts: [leaves]
+  symptoms: Pale yellow patches on top of leaves with white powdery growth underneath; leaves drop.
+  causes: Airborne spores.
+  conditions: Warm, dry days and humid nights.
+  risk: {t: [20, 32], rh: 70, hours: 16}
+  immediate:
+    - "Remove heavily infected leaves."
+  organic:
+    - "Sulfur sprays (not in very hot weather)."
+    - "Improve airflow; avoid excess nitrogen."
+  chemical:
+    - {ai: sulfur, group: FRAC M02}
+    - {ai: hexaconazole, group: FRAC 3}
+    - {ai: azoxystrobin, group: FRAC 11}
+  preventive:
+    - "Tolerant varieties."
+  refs: [ucipm_peppers]
+
+Chili___Mites_and_thrips:
+  name: Mites and thrips (leaf curl complex)
+  kind: pest
+  pathogen: Broad mite (Polyphagotarsonemus latus), spider mites and thrips (Scirtothrips dorsalis)
+  parts: [young leaves, buds]
+  symptoms: Leaves curl downward or upward, look crinkled, bronzed or silvery; distorted new growth.
+  causes: Sap-feeding mites and thrips.
+  conditions: Hot, dry weather.
+  risk: {t: [28, 45], rh_max: 55, hours: 24}
+  immediate:
+    - "Inspect young leaves and buds with a hand lens to identify the pest."
+  organic:
+    - "Remove badly affected shoots; control weeds; blue sticky traps for thrips; neem."
+  chemical:
+    - {ai: abamectin (mites), group: IRAC 6}
+    - {ai: spinetoram (thrips), group: IRAC 5}
+    - {ai: fenpyroximate (mites), group: IRAC 21A}
+  preventive:
+    - "Clean transplants; avoid broad-spectrum sprays."
+  refs: [ucipm_peppers]
+
+Chili___Nutrient_deficiency:
+  name: Nutrient deficiency
+  kind: abiotic
+  pathogen: Nutrient deficiency (often nitrogen, magnesium or potassium)
+  parts: [leaves]
+  symptoms: Yellowing or pale leaves, sometimes between veins, without spots or fungal growth.
+  causes: Low soil fertility, wrong pH, poor roots or irregular watering.
+  conditions: Sandy or depleted soils.
+  immediate:
+    - "Test soil (and pH) before adding fertilizer."
+  organic:
+    - "Compost or well-rotted manure; even watering."
+  chemical:
+    - {ai: magnesium sulfate (foliar, if Mg deficiency confirmed), group: nutrient}
+  preventive:
+    - "Soil test every season."
+  refs: [ucipm_peppers]
+
+# ───────────── Eggplant ─────────────
+Eggplant___Shoot_and_fruit_borer:
+  name: Shoot and fruit borer
+  kind: pest
+  pathogen: Leucinodes orbonalis (moth larva)
+  parts: [shoot tips, fruit]
+  symptoms: Wilting shoot tips; small entry holes in fruit plugged with frass; tunnelled fruit.
+  causes: Larvae boring into shoots and fruit.
+  conditions: Warm season; continuous eggplant cropping.
+  immediate:
+    - "Cut and destroy wilted shoots and bored fruit every week."
+  organic:
+    - "Pheromone traps for monitoring and mass trapping; net nurseries."
+  chemical:
+    - {ai: emamectin benzoate, group: IRAC 6}
+    - {ai: chlorantraniliprole, group: IRAC 28}
+    - {ai: spinosad, group: IRAC 5}
+  preventive:
+    - "Weekly sanitation; avoid continuous cropping of eggplant."
+  refs: [pv_tomato]
+
+Eggplant___Phomopsis_blight:
+  name: Phomopsis blight
+  kind: fungal
+  pathogen: Phomopsis vexans
+  parts: [fruit, leaves, stems]
+  symptoms: Sunken pale-brown fruit lesions with rings of black dots; grey spots on leaves.
+  causes: Seed-borne fungus.
+  conditions: Warm, wet weather.
+  risk: {t: [24, 32], rh: 85, hours: 12}
+  immediate:
+    - "Remove and destroy infected fruit and plants."
+  organic:
+    - "Hot-water-treated seed; rotation 3–4 years."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: carbendazim, group: FRAC 1}
+  preventive:
+    - "Clean seed; rotation."
+  refs: []
+
+Eggplant___Wet_rot:
+  name: Fruit rot (wet rot)
+  kind: fungal
+  pathogen: Choanephora / Phytophthora spp.
+  parts: [fruit, flowers]
+  symptoms: Soft, watery, spreading rot on fruit, sometimes with fuzzy growth.
+  causes: Fungi favoured by wet fruit touching soil.
+  conditions: Humid, rainy weather.
+  risk: {t: [22, 32], rh: 90, hours: 12}
+  immediate:
+    - "Remove rotting fruit immediately."
+  organic:
+    - "Stake plants and mulch; improve drainage and airflow."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+  preventive:
+    - "Avoid fruit contact with wet soil."
+  refs: []
+
+Eggplant___Fruit_cracking:
+  name: Fruit cracking
+  kind: abiotic
+  pathogen: Physiological disorder
+  parts: [fruit]
+  symptoms: Splits or cracks in the fruit skin, which can then rot.
+  causes: Uneven watering or sudden rapid growth.
+  conditions: Heavy irrigation or rain after a dry spell.
+  immediate:
+    - "Harvest cracked fruit before rot sets in."
+  organic:
+    - "Water regularly and evenly; mulch."
+  chemical: []
+  preventive:
+    - "Even irrigation."
+  refs: []
+
+Eggplant___Insect_pest_damage:
+  name: Insect pest damage
+  kind: pest
+  pathogen: Mixed leaf-feeding insects (beetles, caterpillars, jassids, aphids)
+  parts: [leaves]
+  symptoms: Holes, chewed edges, curling or stippling on leaves.
+  causes: Feeding insects.
+  conditions: Warm season.
+  immediate:
+    - "Inspect leaves (including undersides) to identify the pest before spraying."
+  organic:
+    - "Hand-pick larger insects; neem or insecticidal soap; encourage natural enemies."
+  chemical:
+    - {ai: azadirachtin (neem), group: IRAC UN}
+  preventive:
+    - "Weekly scouting."
+  refs: []
+
+Eggplant___Leaf_spot:
+  name: Leaf spot
+  kind: fungal
+  pathogen: Cercospora / Alternaria spp.
+  parts: [leaves]
+  symptoms: Brown roughly circular spots that may merge and cause yellowing.
+  causes: Debris-borne fungi spread by splash.
+  conditions: Warm, humid weather.
+  risk: {t: [22, 32], rh: 85, hours: 12}
+  immediate:
+    - "Remove lower infected leaves."
+  organic:
+    - "Mulch; rotation."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Rotation."
+  refs: []
+
+Eggplant___Mosaic_virus:
+  name: Mosaic virus
+  kind: viral
+  pathogen: e.g. cucumber mosaic virus / tobacco mosaic virus
+  parts: [leaves]
+  symptoms: Light and dark green mosaic mottling; puckered or distorted leaves.
+  causes: Aphids (CMV) or contact (TMV).
+  conditions: Aphid flights; handling.
+  immediate:
+    - "Remove infected plants; disinfect tools."
+  organic:
+    - "Control aphids and weeds."
+  chemical: []
+  preventive:
+    - "Virus-free transplants."
+  refs: []
+
+Eggplant___White_mold:
+  name: White mould
+  kind: fungal
+  pathogen: Sclerotinia sclerotiorum
+  parts: [stems, leaves, fruit]
+  symptoms: White cottony mould with hard black bodies (sclerotia); plants collapse.
+  causes: Long-lived soil sclerotia.
+  conditions: Cool, moist conditions; dense canopies.
+  risk: {t: [15, 25], rh: 90, hours: 16}
+  immediate:
+    - "Remove infected plants with the surrounding soil."
+  organic:
+    - "Improve drainage and airflow; rotate with cereals."
+  chemical:
+    - {ai: carbendazim, group: FRAC 1}
+  preventive:
+    - "Rotation with non-hosts."
+  refs: []
+
+Eggplant___Wilt:
+  name: Wilt (bacterial or fungal)
+  kind: bacterial
+  pathogen: Ralstonia solanacearum, Fusarium or Verticillium spp.
+  parts: [roots, stem, whole plant]
+  symptoms: Plants wilt while still green; browned stem tissue inside. For bacterial wilt, a cut stem in water releases a milky stream.
+  causes: Soil-borne pathogens.
+  conditions: Warm, wet soils.
+  immediate:
+    - "Remove and destroy wilted plants; do not move soil from infested patches."
+  organic:
+    - "Rotation away from solanaceous crops; improve drainage."
+  chemical: []
+  preventive:
+    - "Resistant rootstocks or varieties."
+  refs: []
+
+# ───────────── Cucurbits ─────────────
+Cucumber___Downy_mildew:
+  name: Downy mildew
+  kind: oomycete
+  pathogen: Pseudoperonospora cubensis
+  parts: [leaves]
+  symptoms: Angular yellow spots limited by veins on the upper leaf; grey-purple fuzzy growth underneath after humid nights.
+  causes: Airborne spores.
+  conditions: Leaf wetness and high humidity, moderate temperatures.
+  risk: {t: [15, 25], rh: 90, hours: 8}
+  immediate:
+    - "Protect healthy leaves before the next humid spell; remove badly infected leaves."
+  organic:
+    - "Keep leaves dry (drip irrigation); ventilate tunnels; copper sprays as protectant."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: cymoxanil + mancozeb, group: FRAC 27 + M03}
+    - {ai: dimethomorph, group: FRAC 40}
+  preventive:
+    - "Tolerant varieties; good ventilation."
+  refs: [ucipm_cucurbits]
+
+Cucumber___Anthracnose:
+  name: Anthracnose
+  kind: fungal
+  pathogen: Colletotrichum orbiculare
+  parts: [leaves, stems, fruit]
+  symptoms: Brown angular leaf spots that crack; sunken water-soaked fruit lesions with pink spore masses.
+  causes: Seed and debris-borne fungus.
+  conditions: Warm, wet weather.
+  risk: {t: [22, 30], rh: 90, hours: 12}
+  immediate:
+    - "Remove infected fruit and leaves."
+  organic:
+    - "Clean seed; rotation."
+  chemical:
+    - {ai: chlorothalonil, group: FRAC M05}
+    - {ai: azoxystrobin, group: FRAC 11}
+  preventive:
+    - "Rotation; resistant varieties."
+  refs: [ucipm_cucurbits]
+
+Cucumber___Gummy_stem_blight:
+  name: Gummy stem blight
+  kind: fungal
+  pathogen: Stagonosporopsis spp. (Didymella bryoniae)
+  parts: [stems, leaves, fruit]
+  symptoms: Water-soaked stem lesions oozing amber gum; brown leaf lesions from the margin.
+  causes: Seed and debris-borne fungus.
+  conditions: Warm, wet weather.
+  risk: {t: [20, 28], rh: 90, hours: 12}
+  immediate:
+    - "Remove infected vines."
+  organic:
+    - "Rotation; clean seed."
+  chemical:
+    - {ai: chlorothalonil, group: FRAC M05}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Rotation 2 years."
+  refs: [ucipm_cucurbits]
+
+Cucumber___Bacterial_wilt:
+  name: Bacterial wilt
+  kind: bacterial
+  pathogen: Erwinia tracheiphila (spread by cucumber beetles)
+  parts: [vines, whole plant]
+  symptoms: Leaves wilt suddenly, then whole vines; cut stems release sticky strands.
+  causes: Bacteria introduced by cucumber beetle feeding.
+  conditions: Beetle activity.
+  immediate:
+    - "Remove wilted plants."
+  organic:
+    - "Control cucumber beetles (row covers until flowering)."
+  chemical: []
+  preventive:
+    - "Beetle management."
+  refs: [ucipm_cucurbits]
+
+Cucumber___Belly_rot:
+  name: Belly rot
+  kind: fungal
+  pathogen: Rhizoctonia solani
+  parts: [fruit]
+  symptoms: Brown, sunken, water-soaked rot on the side of the fruit touching the soil.
+  causes: Soil-borne fungus.
+  conditions: Wet soil contact.
+  immediate:
+    - "Remove rotting fruit."
+  organic:
+    - "Mulch or trellis so fruit doesn't touch soil."
+  chemical: []
+  preventive:
+    - "Trellising; rotation."
+  refs: [ucipm_cucurbits]
+
+Cucumber___Pythium_fruit_rot:
+  name: Pythium fruit rot (cottony leak)
+  kind: oomycete
+  pathogen: Pythium spp.
+  parts: [fruit]
+  symptoms: Soft, watery rot with white cottony growth.
+  causes: Soil-borne oomycete.
+  conditions: Wet, warm soil; fruit on the ground.
+  immediate:
+    - "Remove rotting fruit."
+  organic:
+    - "Improve drainage; mulch; trellis."
+  chemical: []
+  preventive:
+    - "Avoid over-irrigation."
+  refs: [ucipm_cucurbits]
+
+Squash___Powdery_mildew:
+  name: Powdery mildew
+  kind: fungal
+  pathogen: Podosphaera xanthii (and Golovinomyces spp.)
+  parts: [leaves, stems]
+  symptoms: White talc-like powder on leaf surfaces; leaves yellow and die early.
+  causes: Airborne spores.
+  conditions: Warm, dry days, humid nights; shaded dense canopies.
+  risk: {t: [20, 30], rh: 60, hours: 16}
+  immediate:
+    - "Remove heavily infected leaves."
+  organic:
+    - "Sulfur or potassium bicarbonate sprays at first sign."
+  chemical:
+    - {ai: sulfur, group: FRAC M02}
+    - {ai: azoxystrobin, group: FRAC 11}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Resistant varieties; spacing."
+  refs: [ucipm_cucurbits]
+
+# ───────────── Onion ─────────────
+Onion___Purple_blotch:
+  name: Purple blotch
+  kind: fungal
+  pathogen: Alternaria porri
+  parts: [leaves, seed stalks]
+  symptoms: Small white sunken spots that enlarge into purple lesions with yellow margins and concentric rings; leaves collapse.
+  causes: Fungus on debris; often follows thrips damage.
+  conditions: Warm (21–30 °C), humid weather with dew.
+  risk: {t: [21, 30], rh: 90, hours: 12}
+  immediate:
+    - "Protect foliage when lesions first appear; manage thrips."
+  organic:
+    - "Rotation; remove debris; wider spacing."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: difenoconazole, group: FRAC 3}
+    - {ai: azoxystrobin, group: FRAC 11}
+  preventive:
+    - "Rotation 3 years; healthy sets."
+  refs: [ucipm_onion, pv_onion]
+
+Onion___Stemphylium_leaf_blight:
+  name: Stemphylium leaf blight
+  kind: fungal
+  pathogen: Stemphylium vesicarium (often with Colletotrichum spp.)
+  parts: [leaves]
+  symptoms: Small yellow-tan water-soaked spots that elongate and turn brown, often on the windward side of leaves.
+  causes: Fungus on debris.
+  conditions: Long leaf wetness; warm weather.
+  risk: {t: [18, 28], rh: 90, hours: 12}
+  immediate:
+    - "Protect foliage when lesions appear."
+  organic:
+    - "Remove debris; rotation."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: azoxystrobin + difenoconazole, group: FRAC 11 + 3}
+  preventive:
+    - "Rotation."
+  refs: [ucipm_onion]
+
+Onion___Iris_yellow_spot_virus:
+  name: Iris yellow spot virus
+  kind: viral
+  pathogen: Iris yellow spot virus (orthotospovirus), spread by onion thrips
+  parts: [leaves, seed stalks]
+  symptoms: Straw-coloured, diamond-shaped lesions on leaves and seed stalks.
+  causes: Thrips (Thrips tabaci) transmit the virus.
+  conditions: Hot, dry weather favouring thrips.
+  immediate:
+    - "No cure; manage thrips."
+  organic:
+    - "Remove volunteer onions and weeds; blue sticky traps."
+  chemical:
+    - {ai: spinetoram (thrips), group: IRAC 5}
+  preventive:
+    - "Thrips management; rotation."
+  refs: [ucipm_onion]
+
+# ───────────── Okra / misc kept for future models ─────────────

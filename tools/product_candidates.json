@@ -1,0 +1,382 @@
+[
+{
+"store": "kissanghar",
+"id": "2005",
+"ai": "abamectin"
+},
+{
+"store": "kissanghar",
+"id": "2115",
+"ai": "abamectin"
+},
+{
+"store": "kissanghar",
+"id": "1944",
+"ai": "acetamiprid"
+},
+{
+"store": "kissanghar",
+"id": "1237",
+"ai": "acetamiprid"
+},
+{
+"store": "kissanghar",
+"id": "1415",
+"ai": "azoxystrobin"
+},
+{
+"store": "kissanghar",
+"id": "679",
+"ai": "azoxystrobin"
+},
+{
+"store": "kissanghar",
+"id": "2074",
+"ai": "buprofezin"
+},
+{
+"store": "kissanghar",
+"id": "1644",
+"ai": "buprofezin"
+},
+{
+"store": "kissanghar",
+"id": "806",
+"ai": "carbendazim"
+},
+{
+"store": "kissanghar",
+"id": "405",
+"ai": "carbendazim"
+},
+{
+"store": "kissanghar",
+"id": "1740",
+"ai": "cartap hydrochloride"
+},
+{
+"store": "kissanghar",
+"id": "791",
+"ai": "cartap hydrochloride"
+},
+{
+"store": "kissanghar",
+"id": "1332",
+"ai": "chlorantraniliprole"
+},
+{
+"store": "kissanghar",
+"id": "1277",
+"ai": "chlorantraniliprole"
+},
+{
+"store": "kissanghar",
+"id": "1131",
+"ai": "chlorothalonil"
+},
+{
+"store": "kissanghar",
+"id": "1091",
+"ai": "chlorothalonil"
+},
+{
+"store": "kissanghar",
+"id": "1783",
+"ai": "copper hydroxide"
+},
+{
+"store": "kissanghar",
+"id": "1298",
+"ai": "copper hydroxide"
+},
+{
+"store": "kissanghar",
+"id": "1856",
+"ai": "copper oxychloride"
+},
+{
+"store": "kissanghar",
+"id": "187",
+"ai": "copper oxychloride"
+},
+{
+"store": "kissanghar",
+"id": "1834",
+"ai": "diafenthiuron"
+},
+{
+"store": "kissanghar",
+"id": "2101",
+"ai": "diafenthiuron"
+},
+{
+"store": "kissanghar",
+"id": "890",
+"ai": "difenoconazole"
+},
+{
+"store": "kissanghar",
+"id": "293",
+"ai": "difenoconazole"
+},
+{
+"store": "kissanghar",
+"id": "1506",
+"ai": "dimethomorph"
+},
+{
+"store": "kissanghar",
+"id": "340",
+"ai": "dimethomorph"
+},
+{
+"store": "kissanghar",
+"id": "812",
+"ai": "emamectin benzoate"
+},
+{
+"store": "kissanghar",
+"id": "644",
+"ai": "emamectin benzoate"
+},
+{
+"store": "kissanghar",
+"id": "431",
+"ai": "flonicamid"
+},
+{
+"store": "kissanghar",
+"id": "1785",
+"ai": "flonicamid"
+},
+{
+"store": "kissanghar",
+"id": "703",
+"ai": "flubendiamide"
+},
+{
+"store": "kissanghar",
+"id": "424",
+"ai": "imidacloprid"
+},
+{
+"store": "kissanghar",
+"id": "1768",
+"ai": "imidacloprid"
+},
+{
+"store": "kissanghar",
+"id": "1318",
+"ai": "isoprothiolane"
+},
+{
+"store": "kissanghar",
+"id": "2164",
+"ai": "kasugamycin"
+},
+{
+"store": "kissanghar",
+"id": "1144",
+"ai": "kasugamycin"
+},
+{
+"store": "kissanghar",
+"id": "134",
+"ai": "mancozeb"
+},
+{
+"store": "kissanghar",
+"id": "1999",
+"ai": "mancozeb"
+},
+{
+"store": "kissanghar",
+"id": "1428",
+"ai": "mandipropamid"
+},
+{
+"store": "kissanghar",
+"id": "616",
+"ai": "metalaxyl-m"
+},
+{
+"store": "kissanghar",
+"id": "569",
+"ai": "metalaxyl-m"
+},
+{
+"store": "kissanghar",
+"id": "2056",
+"ai": "myclobutanil"
+},
+{
+"store": "kissanghar",
+"id": "2052",
+"ai": "myclobutanil"
+},
+{
+"store": "kissanghar",
+"id": "1024",
+"ai": "propiconazole"
+},
+{
+"store": "kissanghar",
+"id": "344",
+"ai": "pyraclostrobin"
+},
+{
+"store": "kissanghar",
+"id": "1590",
+"ai": "pyraclostrobin"
+},
+{
+"store": "kissanghar",
+"id": "1126",
+"ai": "pyriproxyfen"
+},
+{
+"store": "kissanghar",
+"id": "189",
+"ai": "pyriproxyfen"
+},
+{
+"store": "kissanghar",
+"id": "1190",
+"ai": "spinetoram"
+},
+{
+"store": "kissanghar",
+"id": "488",
+"ai": "spinetoram"
+},
+{
+"store": "kissanghar",
+"id": "564",
+"ai": "spiromesifen"
+},
+{
+"store": "kissanghar",
+"id": "563",
+"ai": "spirotetramat"
+},
+{
+"store": "kissanghar",
+"id": "619",
+"ai": "spirotetramat"
+},
+{
+"store": "kissanghar",
+"id": "1335",
+"ai": "sulfur"
+},
+{
+"store": "kissanghar",
+"id": "507",
+"ai": "sulfur"
+},
+{
+"store": "kissanghar",
+"id": "216",
+"ai": "tebuconazole"
+},
+{
+"store": "kissanghar",
+"id": "294",
+"ai": "tebuconazole"
+},
+{
+"store": "kissanghar",
+"id": "1346",
+"ai": "thiamethoxam"
+},
+{
+"store": "kissanghar",
+"id": "1117",
+"ai": "thiamethoxam"
+},
+{
+"store": "kissanghar",
+"id": "447",
+"ai": "thiophanate-methyl"
+},
+{
+"store": "kissanghar",
+"id": "446",
+"ai": "thiophanate-methyl"
+},
+{
+"store": "kissanghar",
+"id": "1322",
+"ai": "lambda-cyhalothrin"
+},
+{
+"store": "kissanghar",
+"id": "379",
+"ai": "lambda-cyhalothrin"
+},
+{
+"store": "kissanghar",
+"id": "792",
+"ai": "fipronil"
+},
+{
+"store": "kissanghar",
+"id": "1282",
+"ai": "fipronil"
+},
+{
+"store": "kissanghar",
+"id": "96",
+"ai": "azoxystrobin + difenoconazole"
+},
+{
+"store": "kissanghar",
+"id": "1429",
+"ai": "azoxystrobin + difenoconazole"
+},
+{
+"store": "kissanghar",
+"id": "358",
+"ai": "azoxystrobin + propiconazole"
+},
+{
+"store": "kissanghar",
+"id": "207",
+"ai": "cymoxanil + mancozeb"
+},
+{
+"store": "kissanghar",
+"id": "1527",
+"ai": "cymoxanil + mancozeb"
+},
+{
+"store": "kissanghar",
+"id": "230",
+"ai": "metalaxyl + mancozeb"
+},
+{
+"store": "kissanghar",
+"id": "960",
+"ai": "metalaxyl + mancozeb"
+},
+{
+"store": "kissanghar",
+"id": "160",
+"ai": "trifloxystrobin + tebuconazole"
+},
+{
+"store": "kissanghar",
+"id": "1444",
+"ai": "trifloxystrobin + tebuconazole"
+},
+{
+"store": "kissanghar",
+"id": "620",
+"ai": "pyraclostrobin + epoxiconazole"
+},
+{
+"store": "kissanghar",
+"id": "1267",
+"ai": "pyraclostrobin + epoxiconazole"
+}
+]

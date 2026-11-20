@@ -1,0 +1,1004 @@
+# Apple, cherry, peach, grape, strawberry, citrus, mango, guava, pomegranate, banana, papaya,
+# date palm, carambola.
+
+# ───────────── Apple / stone fruit / grape / strawberry ─────────────
+Apple___Apple_scab:
+  name: Apple scab
+  kind: fungal
+  pathogen: Venturia inaequalis
+  parts: [leaves, fruit]
+  symptoms: Olive-green to black velvety spots on leaves and fruit; leaves may yellow and drop early; corky, cracked fruit.
+  causes: Spores released from infected fallen leaves in spring.
+  conditions: Cool, wet springs — infection needs several hours of leaf wetness.
+  risk: {t: [6, 24], rh: 90, hours: 9, months: [3, 4, 5, 6]}
+  immediate:
+    - "Protect new growth before forecast rain during green tip to petal fall."
+  organic:
+    - "Rake and destroy fallen leaves; prune for airflow."
+    - "Sulfur or copper sprays as protectants (copper can russet fruit)."
+  chemical:
+    - {ai: captan, group: FRAC M04}
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: myclobutanil, group: FRAC 3}
+    - {ai: difenoconazole, group: FRAC 3}
+    - {ai: trifloxystrobin, group: FRAC 11}
+  preventive:
+    - "Scab-resistant cultivars; orchard sanitation."
+  refs: [ucipm_apple]
+
+Apple___Black_rot:
+  name: Black rot
+  kind: fungal
+  pathogen: Botryosphaeria obtusa
+  parts: [leaves, branches, fruit]
+  symptoms: Purple-ringed 'frog-eye' leaf spots, limb cankers, rotting and mummified fruit.
+  causes: Fungus surviving in cankers, dead wood and mummies.
+  conditions: Warm, wet weather.
+  risk: {t: [20, 30], rh: 90, hours: 10, months: [5, 6, 7, 8, 9]}
+  immediate:
+    - "Remove mummified fruit and dead wood; prune out cankers."
+  organic:
+    - "Sanitation; avoid wounding bark."
+  chemical:
+    - {ai: captan, group: FRAC M04}
+    - {ai: trifloxystrobin, group: FRAC 11}
+  preventive:
+    - "Prune in dry weather; keep trees vigorous."
+  refs: [ucipm_apple]
+
+Apple___Cedar_apple_rust:
+  name: Cedar apple rust
+  kind: fungal
+  pathogen: Gymnosporangium juniperi-virginianae
+  parts: [leaves, fruit]
+  symptoms: Bright yellow-orange leaf spots, later with tube-like structures beneath.
+  causes: Spores from juniper/cedar galls nearby.
+  conditions: Wet spring weather.
+  risk: {t: [10, 24], rh: 90, hours: 6, months: [3, 4, 5]}
+  immediate:
+    - "Protect leaves from pink bud to about 3 weeks after bloom if junipers are nearby."
+  organic:
+    - "Remove nearby junipers / galls where practical."
+  chemical:
+    - {ai: myclobutanil, group: FRAC 3}
+    - {ai: mancozeb, group: FRAC M03}
+  preventive:
+    - "Resistant cultivars."
+  refs: [ucipm_apple]
+
+Cherry___Powdery_mildew:
+  name: Powdery mildew
+  kind: fungal
+  pathogen: Podosphaera clandestina
+  parts: [leaves, shoots, fruit]
+  symptoms: White powdery patches on young leaves; curling, puckering.
+  causes: Airborne spores; overwintering in buds.
+  conditions: Warm days, humid nights.
+  risk: {t: [18, 30], rh: 70, hours: 12}
+  immediate:
+    - "Prune infected shoots."
+  organic:
+    - "Sulfur sprays; open canopy."
+  chemical:
+    - {ai: sulfur, group: FRAC M02}
+    - {ai: myclobutanil, group: FRAC 3}
+  preventive:
+    - "Avoid excess nitrogen."
+  refs: []
+
+Peach___Bacterial_spot:
+  name: Bacterial spot
+  kind: bacterial
+  pathogen: Xanthomonas arboricola pv. pruni
+  parts: [leaves, twigs, fruit]
+  symptoms: Small water-soaked spots turning purple-brown; centres drop out (shot-hole); pitted fruit.
+  causes: Bacteria in twig cankers spread by wind-driven rain.
+  conditions: Warm, wet, windy weather; sandy sites.
+  risk: {t: [20, 30], rh: 90, hours: 10}
+  immediate:
+    - "Copper sprays in dormancy / early season (can injure foliage later)."
+  organic:
+    - "Tolerant varieties; windbreaks."
+  chemical:
+    - {ai: copper hydroxide, group: FRAC M01}
+  preventive:
+    - "Avoid excess nitrogen."
+  refs: [ucipm_peach]
+
+Grape___Black_rot:
+  name: Black rot
+  kind: fungal
+  pathogen: Phyllosticta ampelicida (Guignardia bidwellii)
+  parts: [leaves, shoots, berries]
+  symptoms: Tan leaf spots with dark borders and black dots; berries shrivel into hard black mummies.
+  causes: Mummies and infected canes.
+  conditions: Warm, wet weather from shoot growth to berry colouring.
+  risk: {t: [18, 30], rh: 90, hours: 8}
+  immediate:
+    - "Remove mummies and infected clusters."
+  organic:
+    - "Open canopy; sanitation in dormancy."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: myclobutanil, group: FRAC 3}
+    - {ai: azoxystrobin, group: FRAC 11}
+  preventive:
+    - "Sanitation; canopy management."
+  refs: [ucipm_grape]
+
+Grape___Esca_(Black_Measles):
+  name: Esca (black measles)
+  kind: fungal
+  pathogen: Trunk-disease fungal complex (Phaeomoniella chlamydospora, Phaeoacremonium spp., Fomitiporia spp.)
+  parts: [trunk, leaves, berries]
+  symptoms: Tiger-stripe yellow-brown banding between veins; dark spotting on berries; vine collapse in summer.
+  causes: Fungi entering through pruning wounds.
+  conditions: Wet weather at pruning time.
+  immediate:
+    - "No cure — remove and burn badly affected wood."
+  organic:
+    - "Prune in dry weather; protect large wounds."
+  chemical: []
+  preventive:
+    - "Delayed / double pruning; wound protection."
+  refs: [ucipm_grape]
+
+Grape___Leaf_blight_(Isariopsis_Leaf_Spot):
+  name: Isariopsis leaf spot
+  kind: fungal
+  pathogen: Pseudocercospora vitis
+  parts: [leaves]
+  symptoms: Irregular dark-brown spots that may merge, causing early leaf drop.
+  causes: Fungus on fallen leaves.
+  conditions: Warm, humid weather.
+  risk: {t: [20, 30], rh: 85, hours: 12}
+  immediate:
+    - "Remove infected leaves."
+  organic:
+    - "Canopy airflow."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+  preventive:
+    - "Sanitation."
+  refs: [ucipm_grape]
+
+Strawberry___Leaf_scorch:
+  name: Leaf scorch
+  kind: fungal
+  pathogen: Diplocarpon earlianum
+  parts: [leaves]
+  symptoms: Many small purple spots that merge until the leaf looks scorched.
+  causes: Fungus on old leaves.
+  conditions: Wet weather.
+  risk: {t: [15, 27], rh: 90, hours: 12}
+  immediate:
+    - "Remove old infected leaves."
+  organic:
+    - "Drip irrigation; resistant cultivars."
+  chemical:
+    - {ai: captan, group: FRAC M04}
+  preventive:
+    - "Renovate beds after harvest."
+  refs: [ucipm_strawberry]
+
+# ───────────── Citrus ─────────────
+Citrus___Huanglongbing:
+  name: Huanglongbing (citrus greening)
+  kind: bacterial
+  pathogen: Candidatus Liberibacter asiaticus, spread by the Asian citrus psyllid (Diaphorina citri)
+  parts: [leaves, shoots, fruit, roots]
+  symptoms: Blotchy, asymmetric yellow mottling across leaf veins; small, lopsided, bitter fruit that stays green at the bottom; twig dieback.
+  causes: Bacteria spread by psyllids and infected budwood.
+  conditions: Psyllid flushes on new growth.
+  immediate:
+    - "Confirm with a laboratory PCR test — zinc deficiency looks similar but is symmetric."
+    - "Remove confirmed infected trees to protect the orchard."
+    - "Report to the provincial agriculture department / plant protection authority."
+  organic:
+    - "Control psyllids during new flush; remove abandoned citrus nearby."
+  chemical:
+    - {ai: imidacloprid (psyllids), group: IRAC 4A}
+    - {ai: thiamethoxam (psyllids), group: IRAC 4A}
+    - {ai: spirotetramat (psyllids), group: IRAC 23}
+  preventive:
+    - "Plant certified disease-free nursery stock; area-wide psyllid control."
+  refs: [ucipm_citrus, crec, parc]
+
+Orange___Haunglongbing_(Citrus_greening):
+  alias_of: Citrus___Huanglongbing
+
+Citrus___Canker:
+  name: Citrus canker
+  kind: bacterial
+  pathogen: Xanthomonas citri subsp. citri
+  parts: [leaves, twigs, fruit]
+  symptoms: Raised, corky, brown lesions with oily water-soaked margins and yellow halos on leaves, twigs and fruit.
+  causes: Bacteria spread by wind-driven rain; leafminer tunnels let bacteria in.
+  conditions: Warm, rainy, windy weather (monsoon).
+  risk: {t: [20, 35], rh: 85, hours: 12}
+  immediate:
+    - "Prune out infected twigs in dry weather and burn them; disinfect tools."
+  organic:
+    - "Windbreaks; leafminer control on new flush; copper sprays."
+  chemical:
+    - {ai: copper oxychloride / copper hydroxide, group: FRAC M01}
+  preventive:
+    - "Healthy nursery stock; tolerant varieties (kinnow is moderately tolerant; lemons/limes very susceptible)."
+  refs: [ucipm_citrus, crec]
+
+Citrus___Leafminer:
+  name: Citrus leafminer
+  kind: pest
+  pathogen: Phyllocnistis citrella (moth larva)
+  parts: [young leaves]
+  symptoms: Silvery, winding tunnels in young leaves; curled, distorted new flush.
+  causes: Larvae mining leaves.
+  conditions: Flushing periods (spring, monsoon, autumn).
+  immediate:
+    - "Mature trees tolerate damage — treat young trees and nurseries during flush."
+  organic:
+    - "Avoid pruning that triggers unsynchronised flushes; horticultural oil on new flush."
+  chemical:
+    - {ai: abamectin, group: IRAC 6}
+    - {ai: imidacloprid, group: IRAC 4A}
+  preventive:
+    - "Synchronised flushing; protect young plantings."
+  refs: [ucipm_citrus]
+
+Citrus___Greasy_spot:
+  name: Greasy spot
+  kind: fungal
+  pathogen: Zasmidium citri-griseum (Mycosphaerella citri)
+  parts: [leaves, fruit rind]
+  symptoms: Yellow-brown blotches on the leaf underside that turn dark and greasy; early leaf drop.
+  causes: Spores from decomposing fallen leaves.
+  conditions: Hot, humid summer weather.
+  risk: {t: [25, 35], rh: 85, hours: 16}
+  immediate:
+    - "Collect fallen leaves."
+  organic:
+    - "Petroleum (horticultural) oil sprays in summer."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+    - {ai: azoxystrobin, group: FRAC 11}
+  preventive:
+    - "Remove leaf litter."
+  refs: [crec]
+
+Citrus___Anthracnose:
+  name: Anthracnose / wither tip
+  kind: fungal
+  pathogen: Colletotrichum gloeosporioides
+  parts: [twigs, leaves, fruit]
+  symptoms: Dieback of twig tips, brown leaf spots, and dark sunken spots on fruit.
+  causes: Fungus on dead wood; weak trees.
+  conditions: Warm, wet weather.
+  risk: {t: [22, 32], rh: 90, hours: 12}
+  immediate:
+    - "Prune dead twigs in dry weather."
+  organic:
+    - "Keep trees vigorous; copper after pruning."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Good nutrition and irrigation."
+  refs: [ucipm_citrus]
+
+Citrus___Dieback:
+  name: Dieback
+  kind: fungal
+  pathogen: Often Lasiodiplodia / Colletotrichum spp., usually following stress
+  parts: [twigs, branches]
+  symptoms: Twigs and branches die back from the tips; sparse canopy.
+  causes: Stress (drought, waterlogging, salinity, root rot, nutrient deficiency) plus opportunistic fungi.
+  conditions: Neglected or stressed orchards.
+  immediate:
+    - "Prune dead wood back to healthy tissue and burn it; paint large cuts."
+  organic:
+    - "Correct irrigation, drainage and nutrition."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Good orchard management."
+  refs: [ucipm_citrus]
+
+Citrus___Powdery_mildew:
+  name: Powdery mildew
+  kind: fungal
+  pathogen: Oidium spp.
+  parts: [young leaves, shoots]
+  symptoms: White powdery growth on young leaves and shoots.
+  causes: Airborne spores.
+  conditions: Mild temperatures, shade, humidity.
+  risk: {t: [18, 28], rh: 70, hours: 12}
+  immediate:
+    - "Remove infected shoots."
+  organic:
+    - "Sulfur sprays (avoid in heat)."
+  chemical:
+    - {ai: sulfur, group: FRAC M02}
+  preventive:
+    - "Open canopy."
+  refs: []
+
+Citrus___Sooty_mould:
+  name: Sooty mould
+  kind: fungal
+  pathogen: Saprophytic fungi (Capnodium spp.) growing on insect honeydew
+  parts: [leaves, fruit]
+  symptoms: Black, soot-like coating that can be rubbed off.
+  causes: Honeydew from whiteflies, aphids, mealybugs or soft scales.
+  conditions: Heavy sap-sucking insect populations.
+  immediate:
+    - "Identify and control the honeydew-producing insect."
+  organic:
+    - "Wash off with water; horticultural oil; control ants."
+  chemical: []
+  preventive:
+    - "Manage sap-sucking insects."
+  refs: [ucipm_citrus]
+
+Citrus___Whitefly:
+  name: Whitefly (incl. spiny whitefly)
+  kind: pest
+  pathogen: Aleurocanthus spiniferus / Dialeurodes citri
+  parts: [leaf undersides]
+  symptoms: Black spiny nymphs or white adults under leaves; honeydew and sooty mould.
+  causes: Sap-sucking whiteflies.
+  conditions: Warm, sheltered canopies.
+  immediate:
+    - "Check leaf undersides; prune dense inner growth."
+  organic:
+    - "Horticultural oil; conserve parasitoids (Encarsia, Eretmocerus)."
+  chemical:
+    - {ai: pyriproxyfen, group: IRAC 7C}
+    - {ai: spirotetramat, group: IRAC 23}
+  preventive:
+    - "Open canopy; avoid excess nitrogen."
+  refs: [ucipm_citrus]
+
+Citrus___Mealybugs:
+  name: Mealybugs
+  kind: pest
+  pathogen: Citrus mealybug (Planococcus citri) and related species
+  parts: [leaves, twigs, fruit]
+  symptoms: White, cottony insects clustered in leaf axils, on twigs and under the calyx; honeydew and sooty mould.
+  causes: Sap-sucking mealybugs, protected by ants.
+  conditions: Warm weather.
+  immediate:
+    - "Control ants (sticky bands on trunks)."
+  organic:
+    - "Release / conserve Cryptolaemus beetles; horticultural oil."
+  chemical:
+    - {ai: spirotetramat, group: IRAC 23}
+    - {ai: buprofezin, group: IRAC 16}
+  preventive:
+    - "Ant control; prune for light."
+  refs: [ucipm_citrus]
+
+Citrus___Scale_insects:
+  name: Scale insects (red scale)
+  kind: pest
+  pathogen: California red scale (Aonidiella aurantii) and other armoured scales
+  parts: [leaves, twigs, fruit]
+  symptoms: Small round reddish-brown scales on fruit, leaves and twigs; yellow spots under scales; twig dieback.
+  causes: Armoured scale insects.
+  conditions: Dusty, hot conditions; broad-spectrum sprays killing parasitoids.
+  immediate:
+    - "Check fruit and twigs; treat crawlers."
+  organic:
+    - "Horticultural oil; conserve Aphytis parasitoids."
+  chemical:
+    - {ai: spirotetramat, group: IRAC 23}
+    - {ai: pyriproxyfen, group: IRAC 7C}
+  preventive:
+    - "Reduce dust; selective products only."
+  refs: [ucipm_citrus]
+
+Citrus___Mites:
+  name: Mites (spider / Texas citrus mite)
+  kind: pest
+  pathogen: Eutetranychus banksi, Tetranychus spp., Panonychus citri
+  parts: [leaves, fruit]
+  symptoms: Fine stippling, greyish or silvery leaves; leaf drop in hot dry weather.
+  causes: Mites.
+  conditions: Hot, dry, dusty weather.
+  risk: {t: [28, 45], rh_max: 50, hours: 24}
+  immediate:
+    - "Inspect with hand lens; treat if populations are rising in hot weather."
+  organic:
+    - "Horticultural oil; reduce dust; conserve predatory mites."
+  chemical:
+    - {ai: abamectin, group: IRAC 6}
+    - {ai: fenpyroximate, group: IRAC 21A}
+    - {ai: hexythiazox, group: IRAC 10A}
+  preventive:
+    - "Avoid broad-spectrum insecticides."
+  refs: [ucipm_citrus]
+
+Citrus___Leaf_curl:
+  name: Leaf curl
+  kind: viral
+  pathogen: Viral / vector-related leaf curl (e.g. aphid- or whitefly-borne viruses); also caused by aphid feeding
+  parts: [young leaves]
+  symptoms: Curled, crinkled, distorted young leaves.
+  causes: Viruses or sap-sucking insects (aphids) on new flush.
+  conditions: Flush periods with aphid activity.
+  immediate:
+    - "Check for aphids on the new flush; remove badly affected shoots."
+  organic:
+    - "Insecticidal soap or neem for aphids."
+  chemical:
+    - {ai: flonicamid (aphids), group: IRAC 29}
+  preventive:
+    - "Certified budwood."
+  refs: [ucipm_citrus]
+
+Citrus___Nutrient_deficiency:
+  name: Nutrient deficiency (Zn, Fe, Mn, Mg, N)
+  kind: abiotic
+  pathogen: Micronutrient or nitrogen deficiency
+  parts: [leaves]
+  symptoms: Yellowing between green veins (zinc, iron, manganese — on young leaves; magnesium — on older leaves) or general pale leaves (nitrogen). Patterns are symmetric across the midrib, unlike greening.
+  causes: High-pH calcareous soils in Punjab lock up zinc, iron and manganese; insufficient fertilizer.
+  conditions: Alkaline or sandy soils; spring flush.
+  immediate:
+    - "Get a leaf analysis to identify the deficient nutrient."
+  organic:
+    - "Organic manure improves micronutrient availability."
+  chemical:
+    - {ai: zinc sulfate / chelated micronutrients (foliar), group: nutrient, note: only the nutrient confirmed deficient}
+  preventive:
+    - "Annual leaf analysis; balanced fertilization."
+  refs: [crec]
+
+# ───────────── Mango ─────────────
+Mango___Anthracnose:
+  name: Anthracnose
+  kind: fungal
+  pathogen: Colletotrichum gloeosporioides
+  parts: [leaves, flowers, fruit]
+  symptoms: Dark sunken spots on leaves, blackened flower panicles, and black spots on fruit that rot after harvest.
+  causes: Fungus surviving on twigs and leaves.
+  conditions: Rain and high humidity during flowering and fruit development.
+  risk: {t: [20, 30], rh: 90, hours: 12, months: [2, 3, 4, 5, 6, 7, 8]}
+  immediate:
+    - "Protect panicles during wet weather at flowering."
+  organic:
+    - "Prune for airflow; remove infected twigs and fallen leaves; hot-water treatment of fruit after harvest."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+    - {ai: azoxystrobin, group: FRAC 11}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Orchard sanitation."
+  refs: [pv_mango]
+
+Mango___Powdery_mildew:
+  name: Powdery mildew
+  kind: fungal
+  pathogen: Erysiphe quercicola (Oidium mangiferae)
+  parts: [young leaves, panicles, young fruit]
+  symptoms: White powder on young leaves, flowers and fruitlets; flowers and fruitlets drop.
+  causes: Airborne spores.
+  conditions: Cool nights and dry days at flowering (Feb–Mar in Punjab and Sindh).
+  risk: {t: [10, 31], rh: 60, hours: 12, months: [1, 2, 3, 4]}
+  immediate:
+    - "Protect at panicle emergence and again 2–3 weeks later."
+  organic:
+    - "Sulfur sprays."
+  chemical:
+    - {ai: sulfur, group: FRAC M02}
+    - {ai: hexaconazole, group: FRAC 3}
+  preventive:
+    - "Prune for airflow."
+  refs: [pv_mango]
+
+Mango___Bacterial_canker:
+  name: Bacterial canker
+  kind: bacterial
+  pathogen: Xanthomonas citri pv. mangiferaeindicae
+  parts: [leaves, twigs, fruit]
+  symptoms: Raised, water-soaked black lesions on leaves, twigs and fruit, often cracking.
+  causes: Bacteria spread by rain and wind; wounds.
+  conditions: Monsoon rain with wind.
+  risk: {t: [25, 35], rh: 85, hours: 12}
+  immediate:
+    - "Prune and burn infected parts; disinfect tools."
+  organic:
+    - "Windbreaks."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Healthy nursery plants."
+  refs: [pv_mango]
+
+Mango___Die_back:
+  name: Dieback / sudden death
+  kind: fungal
+  pathogen: Lasiodiplodia theobromae (with Ceratocystis spp. in mango sudden death)
+  parts: [twigs, branches, trunk]
+  symptoms: Twigs dry from the tip backward; leaves turn brown and stay attached; gum on bark.
+  causes: Fungi entering wounds; bark beetles; stress.
+  conditions: Stressed trees; hot, dry periods after rain.
+  immediate:
+    - "Cut back infected twigs 5–10 cm into healthy wood and burn them; paint cuts with copper paste."
+  organic:
+    - "Keep trees well irrigated and fed."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+    - {ai: thiophanate-methyl, group: FRAC 1}
+  preventive:
+    - "Avoid wounding; manage bark beetles."
+  refs: [pv_mango]
+
+Mango___Sooty_mould:
+  name: Sooty mould
+  kind: fungal
+  pathogen: Saprophytic fungi on honeydew from mango hoppers, scales and mealybugs
+  parts: [leaves]
+  symptoms: Black, soot-like coating on leaves that can be rubbed off.
+  causes: Honeydew from sap-sucking insects.
+  conditions: Heavy hopper or mealybug infestations.
+  immediate:
+    - "Control the source insects."
+  organic:
+    - "Wash off with water or a mild starch spray; control ants."
+  chemical: []
+  preventive:
+    - "Manage hoppers and mealybugs."
+  refs: [pv_mango]
+
+Mango___Gall_midge:
+  name: Gall midge
+  kind: pest
+  pathogen: Procontarinia spp.
+  parts: [leaves, panicles]
+  symptoms: Small raised wart-like galls on leaves; damaged panicles.
+  causes: Midge larvae.
+  conditions: New flush and flowering.
+  immediate:
+    - "Remove heavily galled shoots."
+  organic:
+    - "Rake soil under trees to expose pupae."
+  chemical:
+    - {ai: imidacloprid, group: IRAC 4A}
+  preventive:
+    - "Orchard sanitation."
+  refs: [pv_mango]
+
+Mango___Cutting_weevil:
+  name: Leaf-cutting weevil
+  kind: pest
+  pathogen: Deporaus marginatus
+  parts: [young leaves]
+  symptoms: Young leaves cleanly cut near the base and dropped to the ground.
+  causes: Adult weevils.
+  conditions: New leaf flush.
+  immediate:
+    - "Collect and destroy fallen leaf pieces (they contain eggs)."
+  organic:
+    - "Synchronise flushing."
+  chemical: []
+  preventive:
+    - "Protect new flushes on young trees."
+  refs: [pv_mango]
+
+# ───────────── Guava / pomegranate / carambola ─────────────
+Guava___Anthracnose:
+  name: Anthracnose
+  kind: fungal
+  pathogen: Colletotrichum spp.
+  parts: [fruit, leaves, twigs]
+  symptoms: Dark sunken fruit spots that enlarge and rot, sometimes with pink spore masses.
+  causes: Fungus on infected fruit and twigs.
+  conditions: Rainy season.
+  risk: {t: [22, 32], rh: 90, hours: 12}
+  immediate:
+    - "Remove and destroy infected and fallen fruit."
+  organic:
+    - "Prune for airflow; bag fruit."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Orchard sanitation."
+  refs: []
+
+Guava___Canker:
+  name: Fruit canker
+  kind: fungal
+  pathogen: Pestalotiopsis psidii
+  parts: [fruit, leaves]
+  symptoms: Small brown, raised, cracked lesions on fruit and leaves.
+  causes: Fungus entering wounds.
+  conditions: Warm, wet weather.
+  immediate:
+    - "Remove infected fruit and twigs."
+  organic:
+    - "Avoid wounding fruit."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Sanitation."
+  refs: []
+
+Guava___Rust:
+  name: Rust
+  kind: fungal
+  pathogen: Austropuccinia psidii
+  parts: [young leaves, shoots, fruit]
+  symptoms: Yellow powdery pustules on young leaves, shoots and fruit, later turning dark.
+  causes: Airborne spores.
+  conditions: Humid weather with new growth.
+  risk: {t: [15, 25], rh: 90, hours: 8}
+  immediate:
+    - "Prune and destroy infected new growth."
+  organic:
+    - "Avoid overhead watering."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Sanitation."
+  refs: []
+
+Guava___Scab:
+  name: Scab
+  kind: fungal
+  pathogen: Pestalotiopsis / Sphaceloma spp.
+  parts: [fruit]
+  symptoms: Rough, corky brownish scabby patches on fruit.
+  causes: Fungal infection of young fruit.
+  conditions: Wet weather at fruit set.
+  immediate:
+    - "Remove infected fruit."
+  organic:
+    - "Prune for airflow."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Sanitation."
+  refs: []
+
+Guava___Styler_end_rot:
+  name: Styler-end rot
+  kind: fungal
+  pathogen: Phomopsis / Lasiodiplodia spp.
+  parts: [fruit]
+  symptoms: Rot starting at the blossom end, turning it brown and soft.
+  causes: Fungal infection through the flower end.
+  conditions: Wet season.
+  immediate:
+    - "Remove affected fruit promptly."
+  organic:
+    - "Avoid fruit injury; harvest at proper maturity."
+  chemical: []
+  preventive:
+    - "Sanitation."
+  refs: []
+
+Pomegranate___Anthracnose:
+  name: Anthracnose
+  kind: fungal
+  pathogen: Colletotrichum spp.
+  parts: [fruit, leaves]
+  symptoms: Dark brown to black sunken spots on fruit and leaves.
+  causes: Fungus on debris.
+  conditions: Wet weather.
+  risk: {t: [22, 32], rh: 90, hours: 12}
+  immediate:
+    - "Remove infected fruit and twigs."
+  organic:
+    - "Prune to open canopy."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Sanitation."
+  refs: []
+
+Pomegranate___Fruit_borer:
+  name: Fruit borer
+  kind: pest
+  pathogen: Pomegranate butterfly (Deudorix isocrates) / carob moth (Ectomyelois ceratoniae)
+  parts: [fruit]
+  symptoms: Larvae bore into fruit (often through the crown); frass and internal rot.
+  causes: Moth or butterfly larvae.
+  conditions: Fruit development period.
+  immediate:
+    - "Remove and destroy infested and fallen fruit."
+  organic:
+    - "Bag fruit early; remove calyx stamens."
+  chemical:
+    - {ai: chlorantraniliprole, group: IRAC 28}
+  preventive:
+    - "Sanitation; pheromone monitoring."
+  refs: []
+
+Pomegranate___Sunburn:
+  name: Sunburn
+  kind: abiotic
+  pathogen: Physiological (sun scald)
+  parts: [fruit]
+  symptoms: Bleached, brown or black patches on the sun-facing side.
+  causes: Direct sun and heat on exposed fruit.
+  conditions: Hot, sunny weather.
+  immediate:
+    - "Shade exposed fruit."
+  organic:
+    - "Kaolin clay sprays or fruit bagging."
+  chemical: []
+  preventive:
+    - "Keep leaf cover over fruit."
+  refs: []
+
+Carambola___Insect_damage:
+  name: Insect damage
+  kind: pest
+  pathogen: Chewing insects, leaf miners or beetles
+  parts: [leaves]
+  symptoms: Holes and chewed patches in leaves.
+  causes: Feeding insects.
+  conditions: Warm season.
+  immediate:
+    - "Identify the insect before spraying."
+  organic:
+    - "Hand-pick; prune damaged shoots."
+  chemical: []
+  preventive:
+    - "Regular scouting."
+  refs: []
+
+# ───────────── Banana / papaya / date palm ─────────────
+Banana___Sigatoka:
+  name: Sigatoka leaf spot
+  kind: fungal
+  pathogen: Pseudocercospora musae (yellow) / P. fijiensis (black Sigatoka)
+  parts: [leaves]
+  symptoms: Pale streaks that become brown-black elongated spots with grey centres; large areas of leaf die.
+  causes: Airborne spores.
+  conditions: Warm, wet weather.
+  risk: {t: [23, 30], rh: 90, hours: 12}
+  immediate:
+    - "Remove and destroy severely infected leaves."
+  organic:
+    - "Drainage; spacing; de-leafing."
+  chemical:
+    - {ai: propiconazole, group: FRAC 3}
+    - {ai: mancozeb, group: FRAC M03}
+  preventive:
+    - "Tolerant cultivars."
+  refs: [promusa]
+
+Banana___Xanthomonas_wilt:
+  name: Xanthomonas wilt
+  kind: bacterial
+  pathogen: Xanthomonas vasicola pv. musacearum
+  parts: [leaves, fruit, pseudostem]
+  symptoms: Yellowing and wilting leaves, premature uneven ripening, yellow ooze from cut pseudostem.
+  causes: Bacteria spread by insects visiting male flowers and by tools.
+  conditions: Contaminated tools.
+  immediate:
+    - "Uproot and destroy infected mats; disinfect tools."
+  organic:
+    - "Remove male buds early."
+  chemical: []
+  preventive:
+    - "Clean planting material; tool hygiene."
+  refs: [promusa]
+
+Papaya___Ringspot_virus:
+  name: Papaya ringspot virus
+  kind: viral
+  pathogen: Papaya ringspot virus (aphid-transmitted)
+  parts: [leaves, fruit, stem]
+  symptoms: Mosaic and distortion of leaves; dark green rings on fruit; oily streaks on stems.
+  causes: Aphids.
+  conditions: Aphid flights.
+  immediate:
+    - "Rogue infected plants."
+  organic:
+    - "Barrier crops; control cucurbits near papaya."
+  chemical: []
+  preventive:
+    - "Tolerant varieties; virus-free seedlings."
+  refs: []
+
+Papaya___Leaf_curl:
+  name: Leaf curl
+  kind: viral
+  pathogen: Papaya leaf curl virus (whitefly-transmitted)
+  parts: [leaves]
+  symptoms: Downward curling, thickened leaves; stunting.
+  causes: Whiteflies.
+  conditions: High whitefly populations.
+  immediate:
+    - "Rogue infected plants."
+  organic:
+    - "Whitefly management."
+  chemical:
+    - {ai: pyriproxyfen, group: IRAC 7C}
+  preventive:
+    - "Healthy seedlings."
+  refs: []
+
+Papaya___Mosaic_virus:
+  name: Mosaic
+  kind: viral
+  pathogen: Papaya mosaic virus and related viruses
+  parts: [leaves]
+  symptoms: Light/dark green mosaic and leaf distortion.
+  causes: Aphids or contact.
+  conditions: Aphid activity.
+  immediate:
+    - "Rogue infected plants."
+  organic:
+    - "Control aphids."
+  chemical: []
+  preventive:
+    - "Virus-free seedlings."
+  refs: []
+
+Papaya___Mealybug:
+  name: Papaya mealybug
+  kind: pest
+  pathogen: Paracoccus marginatus
+  parts: [leaves, stems, fruit]
+  symptoms: White cottony masses; distorted leaves; sooty mould.
+  causes: Mealybugs.
+  conditions: Dry, warm weather.
+  immediate:
+    - "Prune heavily infested parts."
+  organic:
+    - "Release parasitoid Acerophagus papayae where available; neem."
+  chemical:
+    - {ai: spirotetramat, group: IRAC 23}
+  preventive:
+    - "Monitor."
+  refs: []
+
+Papaya___Mites:
+  name: Mites
+  kind: pest
+  pathogen: Spider mites / broad mites
+  parts: [leaves]
+  symptoms: Yellow stippling, bronzing, webbing.
+  causes: Mites.
+  conditions: Hot, dry weather.
+  risk: {t: [28, 45], rh_max: 50, hours: 24}
+  immediate:
+    - "Spray leaf undersides with water."
+  organic:
+    - "Horticultural oil; predatory mites."
+  chemical:
+    - {ai: abamectin, group: IRAC 6}
+  preventive:
+    - "Avoid dust."
+  refs: []
+
+Date_palm___Black_scorch:
+  name: Black scorch
+  kind: fungal
+  pathogen: Thielaviopsis punctulata (Ceratocystis radicicola)
+  parts: [leaves, terminal bud, inflorescence]
+  symptoms: Black, scorched-looking lesions on leaves and terminal bud; bent 'fool's disease' head.
+  causes: Fungus entering through wounds.
+  conditions: Stressed palms.
+  immediate:
+    - "Remove and burn infected tissue; disinfect tools."
+  organic:
+    - "Avoid wounding."
+  chemical:
+    - {ai: thiophanate-methyl, group: FRAC 1}
+  preventive:
+    - "Sanitation."
+  refs: [ucipm_datepalm]
+
+Date_palm___Fusarium_wilt:
+  name: Fusarium wilt (Bayoud-type)
+  kind: fungal
+  pathogen: Fusarium oxysporum spp.
+  parts: [fronds, vascular tissue]
+  symptoms: Fronds wilt and whiten on one side, progressing up the crown.
+  causes: Soil-borne fungus.
+  conditions: Irrigated orchards.
+  immediate:
+    - "Remove and burn affected palms; avoid moving soil."
+  organic:
+    - "Sanitation."
+  chemical: []
+  preventive:
+    - "Healthy offshoots."
+  refs: [ucipm_datepalm]
+
+Date_palm___Leaf_spot:
+  name: Leaf spot
+  kind: fungal
+  pathogen: Various (e.g. Graphiola, Alternaria spp.)
+  parts: [leaves]
+  symptoms: Brown or black spots on leaflets.
+  causes: Fungi.
+  conditions: Humidity.
+  immediate:
+    - "Remove heavily affected fronds."
+  organic:
+    - "Sanitation."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Spacing."
+  refs: [ucipm_datepalm]
+
+Date_palm___Rachis_blight:
+  name: Rachis blight
+  kind: fungal
+  pathogen: Fungal (e.g. Serenomyces spp.)
+  parts: [frond rachis]
+  symptoms: Brown lesions on the frond midrib; fronds die from the base.
+  causes: Fungi.
+  conditions: Stressed palms.
+  immediate:
+    - "Prune infected fronds."
+  organic:
+    - "Good irrigation and nutrition."
+  chemical: []
+  preventive:
+    - "Sanitation."
+  refs: [ucipm_datepalm]
+
+Date_palm___Scale_insect:
+  name: Parlatoria date scale
+  kind: pest
+  pathogen: Parlatoria blanchardi
+  parts: [leaves, fruit]
+  symptoms: Small white-grey scales on leaflets and fruit; yellowing.
+  causes: Armoured scale insects.
+  conditions: Dense, shaded crowns.
+  immediate:
+    - "Prune heavily infested fronds."
+  organic:
+    - "Conserve predatory beetles; horticultural oil."
+  chemical:
+    - {ai: spirotetramat, group: IRAC 23}
+  preventive:
+    - "Clean offshoots."
+  refs: [ucipm_datepalm]
+
+Date_palm___Nutrient_deficiency:
+  name: Nutrient deficiency (K, Mg, Mn)
+  kind: abiotic
+  pathogen: Potassium, magnesium or manganese deficiency
+  parts: [leaves]
+  symptoms: Yellow or orange leaflets on older fronds (K, Mg) or frizzled young leaves (Mn).
+  causes: Poor or saline soils.
+  conditions: Sandy soils.
+  immediate:
+    - "Leaf and soil analysis."
+  organic:
+    - "Organic manure."
+  chemical:
+    - {ai: potassium / magnesium / manganese sulfate (only the deficient nutrient), group: nutrient}
+  preventive:
+    - "Balanced fertilization."
+  refs: [ucipm_datepalm]
+
+Citrus___Scale_and_mealybugs:
+  name: Scale insects and mealybugs
+  kind: pest
+  pathogen: Armoured scales (e.g. California red scale, Aonidiella aurantii) and mealybugs (e.g. Planococcus citri)
+  parts: [leaves, twigs, fruit]
+  symptoms: Small round reddish-brown scales, or white cottony mealybug clusters, on leaves, twigs and fruit; yellow spots, honeydew and sooty mould; twig dieback in heavy infestations.
+  causes: Sap-sucking scale insects and mealybugs; ants protect them from natural enemies. (Merged class — the image model has too few photos to tell them apart reliably.)
+  conditions: Warm, dusty conditions; broad-spectrum sprays that kill parasitoids and predators.
+  immediate:
+    - "Inspect fruit, twigs and leaf undersides with a hand lens to tell scales from mealybugs."
+    - "Control ants with sticky bands on the trunk."
+  organic:
+    - "Horticultural (petroleum) oil sprays against crawlers."
+    - "Conserve or release natural enemies (Aphytis wasps for scale, Cryptolaemus beetles for mealybugs)."
+  chemical:
+    - {ai: spirotetramat, group: IRAC 23}
+    - {ai: buprofezin, group: IRAC 16}
+    - {ai: pyriproxyfen, group: IRAC 7C}
+  preventive:
+    - "Reduce dust; avoid broad-spectrum insecticides; prune for light and airflow."
+  refs: [ucipm_citrus]

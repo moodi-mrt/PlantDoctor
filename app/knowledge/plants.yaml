@@ -1,0 +1,396 @@
+# Plant reference table. Keys are lower-case plant ids; `model` is the class-name prefix the
+# image model uses (text before "___"). `aliases` include Urdu / Roman-Urdu names so users in
+# Pakistan can type what they call the plant. Care notes are deliberately general; specific
+# fertilizer rates must come from a soil test and the provincial agriculture department.
+#
+# Sources for scientific names / families: CABI Compendium, USDA GRIN Taxonomy.
+
+apple:
+  name: Apple
+  scientific: Malus domestica
+  family: Rosaceae
+  type: fruit tree
+  model: Apple
+  aliases: [seb, saib, سیب]
+  about: Temperate deciduous fruit tree; in Pakistan grown mainly in Balochistan (Quetta, Kalat) and the northern areas of KP and Gilgit-Baltistan.
+  care:
+    watering: Deep watering every 7–14 days in the dry season for young trees; avoid wetting foliage. Mature orchards need water most at fruit set and fruit enlargement.
+    soil: Deep, well-drained loam, pH about 6.0–7.0. Avoid waterlogged sites.
+    fertilizer: Base N–P–K on a soil and leaf test; excess nitrogen produces soft growth that is more prone to scab and mildew.
+
+banana:
+  name: Banana
+  scientific: Musa spp. (Musa acuminata × M. balbisiana hybrids)
+  family: Musaceae
+  type: fruit plant
+  model: Banana
+  aliases: [kela, کیلا]
+  about: Large perennial herb; in Pakistan grown mainly in Sindh (Thatta, Hyderabad, Tando Allahyar).
+  care:
+    watering: High and regular water demand; avoid both drought stress and standing water around the corm.
+    soil: Deep, fertile, well-drained soil rich in organic matter, pH about 5.5–7.0.
+    fertilizer: Heavy potassium and nitrogen feeder; split applications according to a soil test.
+
+bean:
+  name: Common bean
+  scientific: Phaseolus vulgaris
+  family: Fabaceae
+  type: vegetable / pulse
+  model: Bean
+  aliases: [lobia, rajma, sem, phali]
+  about: Annual legume grown for green pods and dry beans; fixes nitrogen through root nodules.
+  care:
+    watering: Even moisture, especially at flowering and pod fill; water at the base, not over the leaves.
+    soil: Well-drained loam, pH about 6.0–7.0.
+    fertilizer: Needs little nitrogen once nodulated; phosphorus and potassium per soil test.
+
+blueberry:
+  name: Blueberry
+  scientific: Vaccinium corymbosum
+  family: Ericaceae
+  type: fruit shrub
+  model: Blueberry
+  aliases: []
+  about: Acid-loving fruit shrub; rarely grown commercially in Pakistan.
+  care:
+    watering: Shallow roots — keep consistently moist, mulch well.
+    soil: Acidic (pH about 4.5–5.5), organic, well-drained.
+    fertilizer: Ammonium-form nitrogen in small split doses.
+
+carambola:
+  name: Carambola (star fruit)
+  scientific: Averrhoa carambola
+  family: Oxalidaceae
+  type: fruit tree
+  model: Carambola
+  aliases: [kamrakh, کمرکھ]
+  about: Small tropical fruit tree with five-ridged fruit.
+  care:
+    watering: Regular watering during flowering and fruiting; tolerates brief dry spells once established.
+    soil: Well-drained soil; sensitive to waterlogging.
+    fertilizer: Balanced fertilizer in small split doses during active growth.
+
+cherry:
+  name: Cherry
+  scientific: Prunus avium / Prunus cerasus
+  family: Rosaceae
+  type: fruit tree
+  model: Cherry
+  aliases: [gilas, گیلاس]
+  about: Temperate stone fruit grown in the northern areas and Balochistan uplands.
+  care:
+    watering: Regular deep watering in dry spells; avoid wetting fruit near harvest (cracking).
+    soil: Deep, well-drained loam; very sensitive to waterlogging.
+    fertilizer: Moderate nitrogen per leaf/soil test.
+
+chili:
+  name: Chili pepper
+  scientific: Capsicum annuum (and C. frutescens)
+  family: Solanaceae
+  type: vegetable / spice
+  model: Chili
+  aliases: [mirch, hari mirch, lal mirch, مرچ]
+  about: Major spice crop in Pakistan, especially Kunri (Sindh) and southern Punjab.
+  care:
+    watering: Regular, even watering; both drought and waterlogging cause flower and fruit drop.
+    soil: Well-drained loam rich in organic matter, pH about 6.0–7.0.
+    fertilizer: Split nitrogen applications plus potassium per soil test; avoid excess nitrogen.
+
+citrus:
+  name: Citrus (kinnow, orange, lemon)
+  scientific: Citrus spp. (e.g. Citrus reticulata 'Kinnow', C. sinensis, C. limon)
+  family: Rutaceae
+  type: fruit tree
+  model: Citrus
+  aliases: [kinnow, kinoo, malta, orange, santra, lemon, nimbu, lime, mosambi, کینو, مالٹا, لیموں]
+  about: Pakistan's most important fruit crop by area; kinnow mandarin from Sargodha, Toba Tek Singh and surrounding districts is the main export variety.
+  care:
+    watering: Regular irrigation, especially at flowering and fruit set; keep water away from the trunk to prevent gummosis / foot rot.
+    soil: Deep, well-drained loam, pH about 6.0–7.5; salinity and waterlogging cause decline.
+    fertilizer: Nitrogen in split doses plus micronutrients (zinc, iron, manganese, magnesium) based on leaf analysis — deficiencies are common in Punjab orchards.
+
+corn:
+  name: Maize (corn)
+  scientific: Zea mays
+  family: Poaceae
+  type: cereal crop
+  model: Corn
+  aliases: [makai, makki, مکئی, maize]
+  about: Third most important cereal in Pakistan after wheat and rice; spring and autumn crops in Punjab and KP.
+  care:
+    watering: Critical water stages are tasselling, silking and grain fill.
+    soil: Well-drained loam, pH about 5.8–7.5.
+    fertilizer: High nitrogen demand applied in splits; phosphorus and potassium per soil test.
+
+cotton:
+  name: Cotton
+  scientific: Gossypium hirsutum
+  family: Malvaceae
+  type: fibre crop
+  model: Cotton
+  aliases: [kapas, phutti, کپاس, narma]
+  about: Pakistan's main cash and fibre crop, grown mainly in southern Punjab and Sindh (kharif season).
+  care:
+    watering: Avoid stress at flowering and boll formation; avoid over-irrigation late in the season (excess vegetative growth, boll rot).
+    soil: Deep, well-drained loam; tolerates moderate salinity.
+    fertilizer: Nitrogen in splits up to peak flowering; phosphorus and potassium per soil test; boron and zinc where deficient.
+
+cucumber:
+  name: Cucumber
+  scientific: Cucumis sativus
+  family: Cucurbitaceae
+  type: vegetable
+  model: Cucumber
+  aliases: [kheera, khira, کھیرا]
+  about: Warm-season cucurbit grown in open fields and tunnels.
+  care:
+    watering: Frequent, even watering (drip preferred); keep leaves dry to reduce mildews.
+    soil: Light, well-drained, organic soil, pH about 6.0–7.0.
+    fertilizer: Moderate nitrogen and high potassium in split doses via fertigation where possible.
+
+date_palm:
+  name: Date palm
+  scientific: Phoenix dactylifera
+  family: Arecaceae
+  type: fruit tree
+  model: Date_palm
+  aliases: [khajoor, khajur, کھجور]
+  about: Major fruit crop of Khairpur (Sindh), Dera Ismail Khan, Jhang and Makran (Balochistan).
+  care:
+    watering: Deep, infrequent irrigation; most water needed from flowering to fruit development.
+    soil: Tolerates sandy and saline soils but yields best on deep, well-drained loam.
+    fertilizer: Organic manure plus nitrogen and potassium per soil and leaf test; correct Mg / Mn / K deficiencies.
+
+eggplant:
+  name: Eggplant (brinjal)
+  scientific: Solanum melongena
+  family: Solanaceae
+  type: vegetable
+  model: Eggplant
+  aliases: [baingan, bengan, بینگن, brinjal]
+  about: Common year-round vegetable in Pakistan.
+  care:
+    watering: Regular watering; uneven moisture causes fruit cracking.
+    soil: Well-drained, fertile loam, pH about 5.5–7.0.
+    fertilizer: Split nitrogen with phosphorus and potassium per soil test.
+
+grape:
+  name: Grape
+  scientific: Vitis vinifera
+  family: Vitaceae
+  type: fruit vine
+  model: Grape
+  aliases: [angoor, انگور]
+  about: Grown mainly in Balochistan (Quetta, Pishin) and Potohar.
+  care:
+    watering: Moderate; reduce water at veraison for quality; avoid wetting foliage.
+    soil: Well-drained soil, pH about 6.0–7.5.
+    fertilizer: Moderate nitrogen; potassium important for fruit quality.
+
+guava:
+  name: Guava
+  scientific: Psidium guajava
+  family: Myrtaceae
+  type: fruit tree
+  model: Guava
+  aliases: [amrood, امرود]
+  about: Widely grown in Punjab (Larkana, Sheikhupura, Kasur) and Sindh; winter crop has the best quality.
+  care:
+    watering: Regular irrigation during flowering and fruit development; tolerant of short droughts.
+    soil: Wide range; best on deep, well-drained loam, pH about 5–7.5.
+    fertilizer: Organic manure plus N–P–K per soil test; zinc where deficient.
+
+mango:
+  name: Mango
+  scientific: Mangifera indica
+  family: Anacardiaceae
+  type: fruit tree
+  model: Mango
+  aliases: [aam, آم]
+  about: Pakistan's second most important fruit; main areas are Multan, Rahim Yar Khan, Bahawalpur (Punjab) and Mirpur Khas, Hyderabad (Sindh).
+  care:
+    watering: Withhold irrigation for 2–3 months before flowering to promote blooming; irrigate regularly from fruit set to harvest.
+    soil: Deep, well-drained soil; avoid hardpans and waterlogging.
+    fertilizer: N–P–K plus organic manure in split doses after harvest and before flowering, per soil test.
+
+onion:
+  name: Onion
+  scientific: Allium cepa
+  family: Amaryllidaceae
+  type: vegetable
+  model: Onion
+  aliases: [piaz, pyaz, پیاز]
+  about: Major vegetable crop in Sindh, Balochistan and Punjab.
+  care:
+    watering: Shallow roots — frequent light irrigation; stop irrigation 10–15 days before harvest.
+    soil: Friable, well-drained loam, pH about 6.0–7.0.
+    fertilizer: Nitrogen early in the season only (late nitrogen delays maturity and harms storage), plus phosphorus, potassium and sulphur per soil test.
+
+papaya:
+  name: Papaya
+  scientific: Carica papaya
+  family: Caricaceae
+  type: fruit plant
+  model: Papaya
+  aliases: [papita, پپیتا]
+  about: Fast-growing tropical fruit plant grown in Sindh and southern Punjab.
+  care:
+    watering: Regular, light irrigation; extremely sensitive to waterlogging (root rot within days).
+    soil: Light, very well-drained soil, pH about 6.0–6.5.
+    fertilizer: Frequent small doses of balanced fertilizer.
+
+peach:
+  name: Peach
+  scientific: Prunus persica
+  family: Rosaceae
+  type: fruit tree
+  model: Peach
+  aliases: [aaru, آڑو]
+  about: Stone fruit grown in Swat, Peshawar valley and Punjab hills.
+  care:
+    watering: Regular deep watering in dry periods, especially during fruit swell.
+    soil: Well-drained sandy loam; sensitive to waterlogging.
+    fertilizer: Moderate nitrogen per leaf/soil test.
+
+pepper:
+  name: Bell pepper (capsicum)
+  scientific: Capsicum annuum (sweet group)
+  family: Solanaceae
+  type: vegetable
+  model: Pepper,_bell
+  aliases: [shimla mirch, شملہ مرچ, capsicum, bell pepper]
+  about: Sweet pepper grown in open fields and tunnels.
+  care:
+    watering: Even moisture; irregular watering causes blossom-end rot.
+    soil: Well-drained, fertile loam, pH about 6.0–7.0.
+    fertilizer: Split nitrogen and potassium; calcium where blossom-end rot occurs.
+
+pomegranate:
+  name: Pomegranate
+  scientific: Punica granatum
+  family: Lythraceae
+  type: fruit tree
+  model: Pomegranate
+  aliases: [anar, انار]
+  about: Grown in Balochistan, KP and Punjab hills.
+  care:
+    watering: Regular irrigation in fruiting; sudden heavy watering after drought causes fruit cracking.
+    soil: Tolerant of many soils, including mildly saline; well-drained preferred.
+    fertilizer: Moderate N–P–K plus organic manure.
+
+potato:
+  name: Potato
+  scientific: Solanum tuberosum
+  family: Solanaceae
+  type: vegetable / tuber crop
+  model: Potato
+  aliases: [aloo, aaloo, آلو]
+  about: Main vegetable crop of Pakistan; autumn crop in central Punjab (Okara, Sahiwal, Pakpattan) is the largest.
+  care:
+    watering: Even moisture from tuber initiation to bulking; avoid waterlogging.
+    soil: Loose, well-drained sandy loam, pH about 5.2–6.5.
+    fertilizer: High nitrogen, phosphorus and potassium demand — follow soil test; avoid late heavy nitrogen.
+
+raspberry:
+  name: Raspberry
+  scientific: Rubus idaeus
+  family: Rosaceae
+  type: fruit shrub
+  model: Raspberry
+  aliases: []
+  about: Cane fruit of temperate climates.
+  care:
+    watering: Consistent moisture, drip preferred.
+    soil: Well-drained, slightly acidic soil.
+    fertilizer: Moderate nitrogen in spring.
+
+rice:
+  name: Rice (paddy)
+  scientific: Oryza sativa
+  family: Poaceae
+  type: cereal crop
+  model: Rice
+  aliases: [chawal, dhaan, munji, چاول, paddy, basmati]
+  about: Pakistan's second staple and a major export (basmati from the Kallar tract — Gujranwala, Sialkot, Sheikhupura; IRRI types in Sindh).
+  care:
+    watering: Keep 5–7 cm standing water during tillering; alternate wetting and drying can save water; drain 10–15 days before harvest.
+    soil: Clay or clay-loam that holds water.
+    fertilizer: Nitrogen in splits (avoid excess — it favours blast and bacterial blight); zinc deficiency is common in Punjab rice soils.
+
+soybean:
+  name: Soybean
+  scientific: Glycine max
+  family: Fabaceae
+  type: oilseed / pulse crop
+  model: Soybean
+  aliases: [soya]
+  about: Oilseed legume; small area in Pakistan.
+  care:
+    watering: Critical at flowering and pod fill.
+    soil: Well-drained loam, pH about 6.0–7.0.
+    fertilizer: Inoculate seed with rhizobia; phosphorus and potassium per soil test.
+
+squash:
+  name: Squash / pumpkin
+  scientific: Cucurbita spp.
+  family: Cucurbitaceae
+  type: vegetable
+  model: Squash
+  aliases: [kaddu, kadu, کدو, tinda, petha]
+  about: Warm-season cucurbits.
+  care:
+    watering: Deep watering at the base; keep foliage dry.
+    soil: Fertile, well-drained soil with organic matter.
+    fertilizer: Balanced fertilizer; avoid excess nitrogen.
+
+strawberry:
+  name: Strawberry
+  scientific: Fragaria × ananassa
+  family: Rosaceae
+  type: fruit plant
+  model: Strawberry
+  aliases: [اسٹرابیری]
+  about: Grown in winter in Punjab (Lahore, Sheikhupura) and KP (Swat, Mardan).
+  care:
+    watering: Frequent light irrigation, drip preferred; keep fruit off wet soil (mulch).
+    soil: Raised beds, well-drained sandy loam, pH about 5.5–6.5.
+    fertilizer: Moderate nitrogen; potassium for fruit quality.
+
+sugarcane:
+  name: Sugarcane
+  scientific: Saccharum officinarum (commercial hybrids Saccharum spp.)
+  family: Poaceae
+  type: cash crop
+  model: Sugarcane
+  aliases: [ganna, kamad, گنا]
+  about: Major cash crop of Punjab, Sindh and KP; planted in spring (Feb–Mar) and autumn (Sep–Oct).
+  care:
+    watering: High water demand during grand growth (summer); avoid waterlogging.
+    soil: Deep, well-drained loam; tolerant of a wide pH range.
+    fertilizer: High nitrogen and potassium demand in splits per soil test; use healthy, treated setts.
+
+tomato:
+  name: Tomato
+  scientific: Solanum lycopersicum
+  family: Solanaceae
+  type: vegetable
+  model: Tomato
+  aliases: [tamatar, ٹماٹر]
+  about: Major vegetable grown in Sindh, Balochistan, KP and Punjab, in open fields and tunnels.
+  care:
+    watering: Deep, regular watering at the base; uneven moisture causes blossom-end rot and fruit cracking.
+    soil: Well-drained loam rich in organic matter, pH about 6.0–7.0.
+    fertilizer: Moderate nitrogen, plenty of potassium and adequate calcium; follow a soil test.
+
+wheat:
+  name: Wheat
+  scientific: Triticum aestivum
+  family: Poaceae
+  type: cereal crop
+  model: Wheat
+  aliases: [gandum, gehun, گندم]
+  about: Pakistan's main staple, grown on about 9 million hectares in the rabi (winter) season.
+  care:
+    watering: Critical stages are crown-root initiation, tillering, booting, flowering and grain filling.
+    soil: Loam to clay-loam, pH about 6.0–8.0.
+    fertilizer: Nitrogen in splits with the first irrigations, phosphorus at sowing; per soil test.

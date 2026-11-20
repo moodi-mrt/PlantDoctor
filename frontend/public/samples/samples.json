@@ -1,0 +1,38 @@
+[
+ {
+  "file": "field-tomato-late-blight.jpg",
+  "crop": "Tomato",
+  "disease": "Late blight",
+  "source": "field"
+ },
+ {
+  "file": "tomato-early-blight.jpg",
+  "crop": "Tomato",
+  "disease": "Early blight",
+  "source": "lab"
+ },
+ {
+  "file": "apple-cedar-apple-rust.jpg",
+  "crop": "Apple",
+  "disease": "Cedar apple rust",
+  "source": "lab"
+ },
+ {
+  "file": "corn-common-rust.jpg",
+  "crop": "Corn",
+  "disease": "Common rust",
+  "source": "lab"
+ },
+ {
+  "file": "grape-black-rot.jpg",
+  "crop": "Grape",
+  "disease": "Black rot",
+  "source": "lab"
+ },
+ {
+  "file": "potato-late-blight.jpg",
+  "crop": "Potato",
+  "disease": "Late blight",
+  "source": "lab"
+ }
+]

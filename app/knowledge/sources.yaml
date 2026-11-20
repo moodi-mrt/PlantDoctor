@@ -1,0 +1,102 @@
+# Reference registry. Disease entries cite these ids in `refs`; every crop also gets its
+# crop-level refs (crop_refs) and every chemical recommendation gets FRAC/IRAC + DPP notes.
+# `checked` = date the URL was last confirmed to load (tests/test_links.py re-checks with --links).
+
+sources:
+  ucipm_tomato: {title: "UC IPM — Tomato pest management guidelines", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/tomato/", checked: 2026-11-20}
+  ucipm_potato: {title: "UC IPM — Potato", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/potato/", checked: 2026-11-20}
+  ucipm_peppers: {title: "UC IPM — Peppers", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/peppers/", checked: 2026-11-20}
+  ucipm_cucurbits: {title: "UC IPM — Cucurbits", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/cucurbits/", checked: 2026-11-20}
+  ucipm_onion: {title: "UC IPM — Onion and garlic", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/onion-and-garlic/", checked: 2026-11-20}
+  ucipm_apple: {title: "UC IPM — Apple", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/apple/", checked: 2026-11-20}
+  ucipm_peach: {title: "UC IPM — Peach", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/peach/", checked: 2026-11-20}
+  ucipm_grape: {title: "UC IPM — Grape", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/grape/", checked: 2026-11-20}
+  ucipm_strawberry: {title: "UC IPM — Strawberry", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/strawberry/", checked: 2026-11-20}
+  ucipm_citrus: {title: "UC IPM — Citrus", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/citrus/", checked: 2026-11-20}
+  ucipm_cotton: {title: "UC IPM — Cotton", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/cotton/", checked: 2026-11-20}
+  ucipm_rice: {title: "UC IPM — Rice", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/rice/", checked: 2026-11-20}
+  ucipm_corn: {title: "UC IPM — Corn", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/corn/", checked: 2026-11-20}
+  ucipm_beans: {title: "UC IPM — Dry beans", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/beans/", checked: 2026-11-20}
+  ucipm_grains: {title: "UC IPM — Small grains (wheat, barley)", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/small-grains/", checked: 2026-11-20}
+  ucipm_datepalm: {title: "UC IPM — Date palm", publisher: University of California, url: "https://ipm.ucanr.edu/agriculture/date-palm/", checked: 2026-11-20}
+  pv_tomato: {title: "PlantVillage — Tomato diseases and pests", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/tomato/infos", checked: 2026-11-20}
+  pv_potato: {title: "PlantVillage — Potato", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/potato/infos", checked: 2026-11-20}
+  pv_wheat: {title: "PlantVillage — Wheat", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/wheat/infos", checked: 2026-11-20}
+  pv_rice: {title: "PlantVillage — Rice", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/rice/infos", checked: 2026-11-20}
+  pv_cotton: {title: "PlantVillage — Cotton", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/cotton/infos", checked: 2026-11-20}
+  pv_sugarcane: {title: "PlantVillage — Sugarcane", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/sugarcane/infos", checked: 2026-11-20}
+  pv_corn: {title: "PlantVillage — Maize", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/corn-maize/infos", checked: 2026-11-20}
+  pv_onion: {title: "PlantVillage — Onion", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/onion/infos", checked: 2026-11-20}
+  pv_mango: {title: "PlantVillage — Mango", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/mango/infos", checked: 2026-11-20}
+  pv_guava: {title: "PlantVillage — Guava", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/guava/infos", checked: 2026-11-20}
+  pv_orange: {title: "PlantVillage — Orange / citrus", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/orange/infos", checked: 2026-11-20}
+  pv_banana: {title: "PlantVillage — Banana", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/banana/infos", checked: 2026-11-20}
+  pv_pomegranate: {title: "PlantVillage — Pomegranate", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/pomegranate/infos", checked: 2026-11-20}
+  pv_eggplant: {title: "PlantVillage — Eggplant", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/eggplant/infos", checked: 2026-11-20}
+  pv_cucumber: {title: "PlantVillage — Cucumber", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/cucumber/infos", checked: 2026-11-20}
+  pv_apple: {title: "PlantVillage — Apple", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/apple/infos", checked: 2026-11-20}
+  pv_grape: {title: "PlantVillage — Grape", publisher: Penn State University, url: "https://plantvillage.psu.edu/topics/grape/infos", checked: 2026-11-20}
+  irri_diseases: {title: "IRRI Rice Knowledge Bank — Rice diseases fact sheets", publisher: International Rice Research Institute, url: "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases", checked: 2026-11-20}
+  irri_insects: {title: "IRRI Rice Knowledge Bank — Rice insect pests fact sheets", publisher: International Rice Research Institute, url: "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects", checked: 2026-11-20}
+  ahdb_cereal: {title: "AHDB Encyclopaedia of cereal diseases", publisher: Agriculture and Horticulture Development Board (UK), url: "https://ahdb.org.uk/knowledge-library/encyclopaedia-of-cereal-diseases", checked: 2026-11-20}
+  cimmyt: {title: "CIMMYT — wheat and maize research", publisher: International Maize and Wheat Improvement Center, url: "https://www.cimmyt.org/", checked: 2026-11-20}
+  ccri: {title: "Central Cotton Research Institute, Multan", publisher: Pakistan Central Cotton Committee, url: "https://ccri.gov.pk/", checked: 2026-11-20}
+  parc: {title: "Pakistan Agricultural Research Council", publisher: Government of Pakistan, url: "https://www.parc.gov.pk/", checked: 2026-11-20}
+  crec: {title: "UF/IFAS Citrus Research and Education Center", publisher: University of Florida, url: "https://crec.ifas.ufl.edu/", checked: 2026-11-20}
+  promusa: {title: "ProMusa — banana knowledge platform", publisher: ProMusa / Alliance Bioversity–CIAT, url: "https://www.promusa.org/", checked: 2026-11-20}
+  fao_faw: {title: "FAO — Fall armyworm", publisher: Food and Agriculture Organization, url: "https://www.fao.org/fall-armyworm", checked: 2026-11-20}
+  fao_ppp: {title: "FAO — Plant production and protection", publisher: Food and Agriculture Organization, url: "https://www.fao.org/plant-production-protection/en", checked: 2026-11-20}
+  fao_pk: {title: "FAO in Pakistan", publisher: Food and Agriculture Organization, url: "https://www.fao.org/pakistan/en", checked: 2026-11-20}
+  frac: {title: "FRAC — fungicides by mode-of-action group", publisher: Fungicide Resistance Action Committee, url: "https://www.frac.info/fungicide-resistance-management/by-frac-mode-of-action-group", checked: 2026-11-20}
+  irac: {title: "IRAC — insecticide modes of action", publisher: Insecticide Resistance Action Committee, url: "https://irac-online.org/modes-of-action/", checked: 2026-11-20}
+  usda_ars: {title: "USDA Agricultural Research Service", publisher: USDA, url: "https://www.ars.usda.gov/", checked: 2026-11-20}
+  apsnet: {title: "APS Education Center — plant disease lessons", publisher: American Phytopathological Society, url: "https://www.apsnet.org/edcenter/Pages/default.aspx", checked: 2026-11-20}
+
+# Default refs per crop (added to every disease of that crop).
+crop_refs:
+  tomato: [ucipm_tomato, pv_tomato]
+  potato: [ucipm_potato, pv_potato]
+  pepper: [ucipm_peppers]
+  chili: [ucipm_peppers]
+  eggplant: [pv_eggplant]
+  cucumber: [ucipm_cucurbits, pv_cucumber]
+  squash: [ucipm_cucurbits]
+  onion: [ucipm_onion, pv_onion]
+  wheat: [ucipm_grains, pv_wheat]
+  rice: [irri_diseases, pv_rice]
+  cotton: [ucipm_cotton, pv_cotton, ccri]
+  sugarcane: [pv_sugarcane]
+  corn: [ucipm_corn, pv_corn]
+  bean: [ucipm_beans]
+  soybean: [ucipm_beans]
+  apple: [ucipm_apple, pv_apple]
+  peach: [ucipm_peach]
+  grape: [ucipm_grape, pv_grape]
+  strawberry: [ucipm_strawberry]
+  citrus: [ucipm_citrus, pv_orange]
+  mango: [pv_mango]
+  guava: [pv_guava]
+  pomegranate: [pv_pomegranate]
+  banana: [promusa, pv_banana]
+  date_palm: [ucipm_datepalm]
+  papaya: [apsnet]
+  carambola: [apsnet]
+  cherry: [apsnet]
+  blueberry: [apsnet]
+  raspberry: [apsnet]
+
+# Shown with every chemical recommendation.
+chemical_notice: >-
+  Active ingredients are listed with their FRAC/IRAC resistance-management group so you can
+  rotate modes of action. Use only a product that is registered in Pakistan for this crop and
+  pest (registration is granted by the Department of Plant Protection, Ministry of National Food
+  Security & Research). Dose, spray interval, pre-harvest interval (PHI), re-entry interval and
+  protective equipment must be taken from the product label — this app does not provide doses.
+  When in doubt, ask your district Agriculture Extension officer.
+
+# Extension help — shown when a diagnosis is uncertain.
+expert_help:
+  - {name: "District Agriculture Extension office", note: "Free advice and field visits; ask for the plant protection officer. Punjab farmers can also call the Agriculture Department helpline 0800-17000 (as listed in its 2025 press releases).", url: "https://agripunjab.punjab.gov.pk/"}
+  - {name: "Pakistan Agricultural Research Council (PARC)", url: "https://www.parc.gov.pk/"}
+  - {name: "Central Cotton Research Institute, Multan (cotton)", url: "https://ccri.gov.pk/"}
+  - {name: "Provincial plant pathology laboratories (Ayub Agricultural Research Institute, Faisalabad; Agriculture Research Institute Tarnab, Peshawar; ARI Tandojam, Sindh)"}

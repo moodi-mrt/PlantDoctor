@@ -1,0 +1,839 @@
+# Wheat, rice, cotton, sugarcane, maize, soybean, bean.
+# Schema: see app/knowledge/README.md. Chemical entries list ACTIVE INGREDIENTS and their
+# FRAC/IRAC resistance group only — dose, interval, PHI and PPE come from the registered
+# product label (never from this file).
+
+# ───────────── Wheat ─────────────
+Wheat___Yellow_rust:
+  name: Yellow (stripe) rust
+  kind: fungal
+  pathogen: Puccinia striiformis f. sp. tritici
+  parts: [leaves, leaf sheaths, glumes]
+  symptoms: Bright yellow-orange powdery pustules arranged in stripes between leaf veins; heavily infected leaves dry out early.
+  causes: Airborne rust spores blown in from infected fields; susceptible varieties. The most damaging wheat disease in northern Pakistan in cool, moist springs.
+  conditions: Cool weather (about 10–15 °C) with dew, rain or high humidity.
+  risk: {t: [7, 18], rh: 85, hours: 12, months: [12, 1, 2, 3, 4]}
+  immediate:
+    - "Confirm by rubbing a leaf — yellow spores come off on the finger."
+    - "Check neighbouring fields and report outbreaks to the local agriculture extension office."
+    - "If stripes are present on the flag leaf or the leaf below it before grain fill, a fungicide is usually justified."
+  organic:
+    - "Remove volunteer wheat and grassy weeds that carry rust between seasons."
+    - "Balanced fertilization — excess nitrogen makes leaves more susceptible."
+  chemical:
+    - {ai: propiconazole, group: FRAC 3}
+    - {ai: tebuconazole, group: FRAC 3}
+    - {ai: azoxystrobin + propiconazole, group: FRAC 11 + 3}
+    - {ai: pyraclostrobin + epoxiconazole, group: FRAC 11 + 3}
+  preventive:
+    - "Sow rust-resistant varieties recommended for your area (resistance changes as the fungus evolves — check the current list)."
+    - "Sow at the recommended time; avoid very late sowing."
+    - "Scout from tillering onwards, especially after cool rainy spells."
+  refs: [ucipm_grains, ahdb_cereal, pv_wheat, cimmyt, parc]
+
+Wheat___Brown_rust:
+  name: Brown (leaf) rust
+  kind: fungal
+  pathogen: Puccinia triticina
+  parts: [leaves]
+  symptoms: Small, round, orange-brown pustules scattered randomly (not in stripes), mainly on the upper leaf surface.
+  causes: Airborne spores; susceptible varieties; warmer weather than yellow rust.
+  conditions: Mild to warm temperatures (about 15–25 °C) with dew or free moisture on leaves.
+  risk: {t: [15, 25], rh: 85, hours: 8, months: [1, 2, 3, 4]}
+  immediate:
+    - "Assess the share of flag-leaf area covered; treatment pays off mainly when rust reaches the top two leaves before grain fill."
+  organic:
+    - "Remove volunteer wheat."
+    - "Avoid excess nitrogen."
+  chemical:
+    - {ai: propiconazole, group: FRAC 3}
+    - {ai: tebuconazole, group: FRAC 3}
+    - {ai: azoxystrobin + propiconazole, group: FRAC 11 + 3}
+  preventive:
+    - "Grow resistant varieties."
+    - "Timely sowing."
+    - "Scout regularly from booting."
+  refs: [ucipm_grains, ahdb_cereal, pv_wheat, cimmyt]
+
+Wheat___Septoria:
+  name: Septoria leaf blotch
+  kind: fungal
+  pathogen: Zymoseptoria tritici
+  parts: [leaves]
+  symptoms: Irregular brown blotches on leaves, often with tiny black dots (pycnidia) inside; starts on the lower leaves.
+  causes: Rain-splashed spores from crop residue and lower leaves.
+  conditions: Repeated rainfall and long leaf-wetness periods at moderate temperatures.
+  risk: {t: [10, 25], rh: 90, hours: 20, months: [12, 1, 2, 3, 4]}
+  immediate:
+    - "Check whether lesions are moving onto the top three leaves — that is when yield is at risk."
+  organic:
+    - "Bury or remove infected residue."
+    - "Avoid very early, dense sowing."
+  chemical:
+    - {ai: propiconazole, group: FRAC 3}
+    - {ai: tebuconazole, group: FRAC 3}
+    - {ai: chlorothalonil (protectant), group: FRAC M05}
+  preventive:
+    - "Rotate away from wheat."
+    - "Use tolerant varieties."
+  refs: [ahdb_cereal, ucipm_grains, pv_wheat]
+
+Wheat___Powdery_mildew:
+  name: Powdery mildew
+  kind: fungal
+  pathogen: Blumeria graminis f. sp. tritici
+  parts: [leaves, stems, ears]
+  symptoms: White to grey fluffy patches on leaves and stems that later develop tiny black dots.
+  causes: Airborne spores; dense, lush crops.
+  conditions: Moderate temperatures and high humidity, but leaf surfaces do not need to be wet.
+  risk: {t: [15, 22], rh: 85, hours: 12, months: [12, 1, 2, 3, 4]}
+  immediate:
+    - "Check upper leaves; treat only if mildew is spreading onto the flag leaf."
+  organic:
+    - "Avoid excess nitrogen and very dense seed rates."
+  chemical:
+    - {ai: sulfur, group: FRAC M02}
+    - {ai: propiconazole, group: FRAC 3}
+    - {ai: tebuconazole, group: FRAC 3}
+  preventive:
+    - "Resistant varieties."
+    - "Balanced fertilization."
+  refs: [ahdb_cereal, ucipm_grains]
+
+# ───────────── Rice ─────────────
+Rice___Blast:
+  name: Rice blast
+  kind: fungal
+  pathogen: Magnaporthe oryzae (Pyricularia oryzae)
+  parts: [leaves, leaf collar, nodes, panicle neck]
+  symptoms: Diamond- or spindle-shaped lesions with grey centres and brown margins on leaves; neck blast blackens the panicle neck so grains stay empty.
+  causes: Airborne spores; excess nitrogen; susceptible varieties (many basmati types are susceptible).
+  conditions: Long leaf wetness, night temperatures about 20–25 °C, high humidity; dry nursery soils.
+  risk: {t: [20, 28], rh: 90, hours: 12, months: [7, 8, 9, 10]}
+  immediate:
+    - "Stop further nitrogen top-dressing."
+    - "Keep the field flooded (drought stress increases blast)."
+    - "If leaf blast is spreading before heading, protect the crop to prevent neck blast."
+  organic:
+    - "Burn or remove infected straw and stubble."
+    - "Silicon-rich amendments (e.g. rice-husk ash) can reduce susceptibility."
+  chemical:
+    - {ai: tricyclazole, group: FRAC 16.1}
+    - {ai: azoxystrobin, group: FRAC 11}
+    - {ai: isoprothiolane, group: FRAC 6}
+    - {ai: trifloxystrobin + tebuconazole, group: FRAC 11 + 3}
+  preventive:
+    - "Use certified seed of tolerant varieties."
+    - "Split nitrogen; avoid excess."
+    - "Seed treatment with a registered fungicide."
+  refs: [irri_diseases, ucipm_rice, parc]
+
+Rice___Brown_spot:
+  name: Brown spot
+  kind: fungal
+  pathogen: Bipolaris oryzae (Cochliobolus miyabeanus)
+  parts: [leaves, glumes, grains]
+  symptoms: Oval brown spots with grey centres and a yellow halo; spotted, discoloured grain.
+  causes: Seed-borne and airborne; strongly linked to poor, nutrient-deficient (especially potassium, silicon) soils.
+  conditions: Humid weather at 25–30 °C; water-stressed or nutrient-poor fields.
+  risk: {t: [25, 32], rh: 90, hours: 12, months: [7, 8, 9, 10]}
+  immediate:
+    - "Check soil fertility — brown spot is often a sign of nutrient stress."
+  organic:
+    - "Use clean seed; hot-water seed treatment."
+    - "Correct potassium and silicon deficiencies."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: propiconazole, group: FRAC 3}
+    - {ai: azoxystrobin + difenoconazole, group: FRAC 11 + 3}
+  preventive:
+    - "Balanced fertilization based on soil test."
+    - "Seed treatment."
+  refs: [irri_diseases]
+
+Rice___Bacterial_leaf_blight:
+  name: Bacterial leaf blight
+  kind: bacterial
+  pathogen: Xanthomonas oryzae pv. oryzae
+  parts: [leaves]
+  symptoms: Water-soaked yellow stripes from the leaf tip and margins that turn straw-coloured; milky bacterial ooze in the morning; seedlings may wilt (kresek).
+  causes: Bacteria spread through irrigation water, rain splash and wounds; excess nitrogen.
+  conditions: Warm (25–34 °C), humid, windy, rainy weather; floods.
+  risk: {t: [25, 34], rh: 85, hours: 12, months: [7, 8, 9, 10]}
+  immediate:
+    - "Stop nitrogen top-dressing."
+    - "Drain the field briefly where feasible and avoid moving water from infected to healthy fields."
+  organic:
+    - "Remove infected stubble and weed hosts."
+    - "Balanced nitrogen."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01, note: limited efficacy; protectant only}
+    - {ai: kasugamycin, group: FRAC 24, note: only where registered for rice}
+  preventive:
+    - "Resistant varieties are the main control."
+    - "Clean seed, wider spacing, avoid clipping seedling tips."
+  refs: [irri_diseases, ucipm_rice]
+
+Rice___Bacterial_leaf_streak:
+  name: Bacterial leaf streak
+  kind: bacterial
+  pathogen: Xanthomonas oryzae pv. oryzicola
+  parts: [leaves]
+  symptoms: Narrow, dark-green, water-soaked streaks between veins that turn yellow-brown and translucent; beads of yellow ooze.
+  causes: Seed-borne; spread by rain splash and wind.
+  conditions: Warm, wet, windy weather.
+  risk: {t: [25, 34], rh: 90, hours: 12, months: [7, 8, 9, 10]}
+  immediate:
+    - "Avoid excess nitrogen; remove infected stubble after harvest."
+  organic:
+    - "Clean seed; hot-water seed treatment."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01, note: protectant; limited efficacy}
+  preventive:
+    - "Tolerant varieties; balanced fertilization."
+  refs: [irri_diseases]
+
+Rice___Bacterial_panicle_blight:
+  name: Bacterial panicle blight
+  kind: bacterial
+  pathogen: Burkholderia glumae
+  parts: [panicles, grains]
+  symptoms: Upright panicles with straw-to-grey discoloured, unfilled grains, often with a dark band at the base of the glume.
+  causes: Seed-borne bacteria; very hot nights during flowering.
+  conditions: High night temperatures (above about 25 °C) and humidity at heading.
+  risk: {t: [25, 40], rh: 80, hours: 24, months: [8, 9, 10]}
+  immediate:
+    - "There is no curative spray — record affected fields and use clean seed next season."
+  organic:
+    - "Use clean seed from unaffected fields."
+    - "Avoid excess nitrogen."
+  chemical: []
+  preventive:
+    - "Earlier planting so flowering avoids the hottest nights."
+    - "Tolerant varieties."
+  refs: [ucipm_rice]
+
+Rice___Sheath_blight:
+  name: Sheath blight
+  kind: fungal
+  pathogen: Rhizoctonia solani
+  parts: [leaf sheaths, leaves]
+  symptoms: Oval, grey-green to white lesions with brown borders on sheaths near the water line, spreading upward in a 'snake-skin' pattern.
+  causes: Soil-borne sclerotia floating on irrigation water; dense canopies; high nitrogen.
+  conditions: Hot (28–32 °C), very humid canopies.
+  risk: {t: [26, 34], rh: 90, hours: 24, months: [7, 8, 9, 10]}
+  immediate:
+    - "Inspect the base of tillers; treat if lesions are moving up the plant before booting."
+  organic:
+    - "Remove floating debris and weeds."
+    - "Wider spacing; balanced nitrogen."
+  chemical:
+    - {ai: hexaconazole, group: FRAC 3}
+    - {ai: azoxystrobin, group: FRAC 11}
+    - {ai: validamycin, group: FRAC 26}
+  preventive:
+    - "Avoid very dense planting and excessive nitrogen."
+  refs: [irri_diseases, ucipm_rice]
+
+Rice___Tungro:
+  name: Rice tungro
+  kind: viral
+  pathogen: Rice tungro bacilliform + spherical viruses, spread by green leafhoppers
+  parts: [leaves, whole plant]
+  symptoms: Stunted plants with yellow-orange leaves starting from the tip, fewer tillers.
+  causes: Viruses carried by green leafhoppers (Nephotettix spp.).
+  conditions: Asynchronous planting and high leafhopper numbers.
+  immediate:
+    - "Rogue and destroy infected hills early."
+    - "Monitor leafhoppers with light traps / sweep nets."
+  organic:
+    - "Synchronised planting across the area; plough under infected stubble."
+  chemical:
+    - {ai: imidacloprid (against leafhopper vector), group: IRAC 4A}
+    - {ai: buprofezin (against nymphs), group: IRAC 16}
+  preventive:
+    - "Resistant varieties; synchronous planting; fallow period to break the cycle."
+  refs: [irri_diseases]
+
+Rice___Leaf_scald:
+  name: Leaf scald
+  kind: fungal
+  pathogen: Microdochium oryzae (Monographella albescens)
+  parts: [leaves]
+  symptoms: Zoned, wavy lesions starting at the leaf tip or edge, alternating light tan and dark brown bands.
+  causes: Seed-borne and residue-borne fungus; high nitrogen.
+  conditions: Wet weather and high humidity.
+  risk: {t: [22, 30], rh: 90, hours: 12, months: [7, 8, 9, 10]}
+  immediate:
+    - "Avoid further nitrogen."
+  organic:
+    - "Clean seed; remove infected residue."
+  chemical:
+    - {ai: propiconazole, group: FRAC 3}
+    - {ai: mancozeb, group: FRAC M03}
+  preventive:
+    - "Balanced fertilization; clean seed."
+  refs: [irri_diseases]
+
+Rice___Downy_mildew:
+  name: Downy mildew
+  kind: oomycete
+  pathogen: Sclerophthora macrospora
+  parts: [leaves, whole plant]
+  symptoms: Stunted, excessively tillered plants with twisted, thickened leaves; panicles deformed or leafy.
+  causes: Oospores in soil; seedlings in flooded nurseries.
+  conditions: Seedlings submerged after transplanting.
+  immediate:
+    - "Remove and destroy infected plants."
+  organic:
+    - "Avoid deep flooding of young seedlings; control grassy weed hosts."
+  chemical:
+    - {ai: metalaxyl (seed/nursery treatment), group: FRAC 4}
+  preventive:
+    - "Good nursery drainage."
+  refs: [irri_diseases]
+
+Rice___Hispa:
+  name: Rice hispa
+  kind: pest
+  pathogen: Dicladispa armigera (beetle)
+  parts: [leaves]
+  symptoms: White parallel streaks from adults scraping the leaf surface; blotch mines from larvae tunnelling inside leaves.
+  causes: Hispa beetles; grassy weeds nearby.
+  conditions: Heavy rain followed by humid weather; excess nitrogen.
+  immediate:
+    - "Clip and destroy mined leaf tips in the nursery."
+    - "Count adults — treat only above the local action threshold."
+  organic:
+    - "Sweep-net adults in the nursery; avoid excess nitrogen."
+  chemical:
+    - {ai: chlorantraniliprole, group: IRAC 28}
+    - {ai: lambda-cyhalothrin, group: IRAC 3A, note: broad-spectrum; harms natural enemies}
+  preventive:
+    - "Weed control around fields; close plant spacing avoided."
+  refs: [irri_insects]
+
+Rice___Stem_borer_dead_heart:
+  name: Stem borer (dead heart)
+  kind: pest
+  pathogen: Yellow stem borer (Scirpophaga incertulas) and related borers
+  parts: [stems, central shoot]
+  symptoms: Central shoot dries out and pulls out easily (dead heart); at heading, white empty panicles (white heads).
+  causes: Larvae boring into the stem.
+  conditions: Continuous rice cropping; stubble left in fields.
+  immediate:
+    - "Pull out and destroy dead hearts with the larvae inside."
+    - "Use pheromone or light traps to time control."
+  organic:
+    - "Cut harvest low and destroy stubble to kill overwintering larvae."
+    - "Release egg parasitoids (Trichogramma) where available."
+  chemical:
+    - {ai: chlorantraniliprole, group: IRAC 28}
+    - {ai: cartap hydrochloride, group: IRAC 14}
+    - {ai: fipronil (granules), group: IRAC 2B}
+  preventive:
+    - "Destroy stubble; synchronous planting; avoid excess nitrogen."
+  refs: [irri_insects]
+
+Rice___Leaf_folder:
+  name: Rice leaf folder
+  kind: pest
+  pathogen: Cnaphalocrocis medinalis (moth larva)
+  parts: [leaves]
+  symptoms: Leaves folded lengthwise and tied with silk; white, scraped streaks inside the fold.
+  causes: Leaf folder larvae.
+  conditions: Shaded, humid, heavily fertilised fields.
+  immediate:
+    - "Count damaged leaves per hill; treat only above the action threshold."
+  organic:
+    - "Avoid excess nitrogen; conserve spiders and parasitoids."
+  chemical:
+    - {ai: chlorantraniliprole, group: IRAC 28}
+    - {ai: flubendiamide, group: IRAC 28}
+  preventive:
+    - "Balanced fertilization; avoid early broad-spectrum sprays."
+  refs: [irri_insects]
+
+# ───────────── Cotton ─────────────
+Cotton___Leaf_curl_virus:
+  name: Cotton leaf curl disease (CLCuD)
+  kind: viral
+  pathogen: Cotton leaf curl begomoviruses (e.g. Cotton leaf curl Multan / Kokhran viruses), spread by whitefly Bemisia tabaci
+  parts: [leaves, veins, whole plant]
+  symptoms: Upward or downward leaf curling, thickened dark veins, leaf-like outgrowths (enations) under leaves, stunting.
+  causes: Viruses transmitted by whiteflies. The most damaging cotton disease in Pakistan.
+  conditions: High whitefly populations; hot weather; early-season infection is most damaging.
+  immediate:
+    - "There is no cure — remove and destroy badly infected plants early in the season."
+    - "Monitor and manage whitefly."
+    - "Report heavy outbreaks to the Central Cotton Research Institute or the local extension office."
+  organic:
+    - "Remove alternate hosts (e.g. okra, weeds) near cotton."
+    - "Yellow sticky traps for whitefly monitoring."
+  chemical:
+    - {ai: pyriproxyfen (whitefly nymphs), group: IRAC 7C}
+    - {ai: spirotetramat, group: IRAC 23}
+    - {ai: flonicamid, group: IRAC 29}
+    - {ai: diafenthiuron, group: IRAC 12A}
+  preventive:
+    - "Sow CLCuD-tolerant approved varieties."
+    - "Sow within the recommended window."
+    - "Avoid early-season broad-spectrum insecticides that kill whitefly predators."
+  refs: [ccri, pv_cotton, ucipm_cotton]
+
+Cotton___Bacterial_blight:
+  name: Bacterial blight (angular leaf spot)
+  kind: bacterial
+  pathogen: Xanthomonas citri pv. malvacearum
+  parts: [leaves, stems, bolls]
+  symptoms: Angular, water-soaked spots bounded by veins that turn brown-black; black-arm lesions on stems; boll rot.
+  causes: Seed-borne bacteria spread by rain splash.
+  conditions: Warm, wet, windy weather.
+  risk: {t: [25, 35], rh: 85, hours: 12, months: [6, 7, 8, 9, 10]}
+  immediate:
+    - "Avoid working in wet fields; remove severely infected plants."
+  organic:
+    - "Use acid-delinted, treated seed; remove crop debris."
+  chemical:
+    - {ai: copper oxychloride, group: FRAC M01, note: protectant; limited effect once established}
+  preventive:
+    - "Resistant varieties; crop rotation."
+  refs: [ucipm_cotton, pv_cotton]
+
+Cotton___Alternaria_leaf_spot:
+  name: Alternaria leaf spot
+  kind: fungal
+  pathogen: Alternaria macrospora / A. alternata
+  parts: [leaves, bracts]
+  symptoms: Small brown circular spots with concentric rings, often with a purple margin; older leaves drop.
+  causes: Fungus surviving on debris; often worse on potassium-deficient or stressed plants.
+  conditions: Humid, rainy weather.
+  risk: {t: [22, 32], rh: 85, hours: 12, months: [6, 7, 8, 9, 10]}
+  immediate:
+    - "Check potassium nutrition."
+  organic:
+    - "Remove crop debris; balanced potassium."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: difenoconazole, group: FRAC 3}
+  preventive:
+    - "Balanced fertilization; crop rotation."
+  refs: [pv_cotton, ucipm_cotton]
+
+Cotton___Fusarium_wilt:
+  name: Fusarium wilt
+  kind: fungal
+  pathogen: Fusarium oxysporum f. sp. vasinfectum
+  parts: [roots, stem vascular tissue, whole plant]
+  symptoms: Yellowing and wilting starting on lower leaves; brown streaks in the stem's vascular tissue.
+  causes: Soil-borne fungus, often with root-knot nematodes.
+  conditions: Warm soils; sandy, nematode-infested fields.
+  immediate:
+    - "Cut a stem to confirm brown vascular streaks; remove and destroy dead plants."
+  organic:
+    - "Long rotations with non-host crops; manage nematodes."
+  chemical: []
+  preventive:
+    - "Resistant varieties; seed treatment; avoid moving infested soil."
+  refs: [ucipm_cotton]
+
+Cotton___Verticillium_wilt:
+  name: Verticillium wilt
+  kind: fungal
+  pathogen: Verticillium dahliae
+  parts: [leaves, stem vascular tissue]
+  symptoms: Yellow, then brown, patches between leaf veins ('tiger stripe'); vascular browning; leaf drop.
+  causes: Long-lived soil-borne microsclerotia.
+  conditions: Cool, wet soils after planting; high nitrogen.
+  immediate:
+    - "No curative treatment — record affected areas."
+  organic:
+    - "Rotation with cereals; avoid excess nitrogen and over-irrigation."
+  chemical: []
+  preventive:
+    - "Tolerant varieties; field sanitation."
+  refs: [ucipm_cotton]
+
+Cotton___Jassid_damage:
+  name: Jassid (cotton leafhopper) damage
+  kind: pest
+  pathogen: Amrasca biguttula (cotton jassid)
+  parts: [leaves]
+  symptoms: Leaf edges turn yellow then reddish-brown and curl downward ('hopper burn').
+  causes: Sap-sucking leafhopper nymphs and adults on leaf undersides.
+  conditions: Hot, humid weather; susceptible smooth-leaf varieties.
+  immediate:
+    - "Count jassids on leaf undersides; treat only above the economic threshold used by your extension service."
+  organic:
+    - "Hairy-leaf varieties; conserve predators (lacewings, ladybirds, spiders)."
+    - "Neem-based sprays reduce numbers."
+  chemical:
+    - {ai: flonicamid, group: IRAC 29}
+    - {ai: acetamiprid, group: IRAC 4A}
+    - {ai: azadirachtin (neem), group: IRAC UN}
+  preventive:
+    - "Tolerant varieties; avoid excessive nitrogen."
+  refs: [ccri, ucipm_cotton]
+
+Cotton___Leaf_reddening:
+  name: Leaf reddening
+  kind: abiotic
+  pathogen: Physiological disorder (often magnesium or nitrogen deficiency, water stress, cold nights or heavy boll load)
+  parts: [leaves]
+  symptoms: Leaves turn red or purple, starting from the margins or between veins, usually late in the season.
+  causes: Nutrient deficiency (Mg, N, K), drought, root problems or heavy fruit load.
+  conditions: Late season; sandy or poor soils.
+  immediate:
+    - "Get a soil or leaf test before adding nutrients."
+    - "Check for jassid damage, which can look similar."
+  organic:
+    - "Add organic matter; even irrigation."
+  chemical:
+    - {ai: magnesium sulfate (foliar nutrient, only if Mg deficiency is confirmed), group: nutrient}
+  preventive:
+    - "Balanced fertilization based on soil test."
+  refs: [ucipm_cotton]
+
+Cotton___Herbicide_damage:
+  name: Herbicide injury
+  kind: abiotic
+  pathogen: Chemical injury (drift or residue of growth-regulator or other herbicides)
+  parts: [leaves, growing points]
+  symptoms: Distorted, cupped or strap-like leaves, bleaching or fused veins on new growth — often in a pattern following the spray direction.
+  causes: Herbicide drift from neighbouring fields, contaminated sprayers or soil residues.
+  conditions: Windy spraying conditions; shared sprayers.
+  immediate:
+    - "Note the pattern and date; ask neighbours what was sprayed."
+    - "Do not spray more chemicals — mildly affected plants often grow out of it."
+  organic:
+    - "Keep plants well watered and fed so they can recover."
+  chemical: []
+  preventive:
+    - "Clean sprayers thoroughly; spray only in calm conditions; keep buffer zones."
+  refs: [ucipm_cotton]
+
+# ───────────── Sugarcane ─────────────
+Sugarcane___Brown_rust:
+  name: Brown rust
+  kind: fungal
+  pathogen: Puccinia melanocephala
+  parts: [leaves]
+  symptoms: Small elongated orange-brown to dark brown pustules, mostly on the lower leaf surface.
+  causes: Airborne spores; susceptible varieties.
+  conditions: Warm days, cool humid nights, heavy dew.
+  risk: {t: [15, 30], rh: 90, hours: 12}
+  immediate:
+    - "Check the variety's resistance rating; fungicides are rarely economic in sugarcane."
+  organic:
+    - "Balanced fertilization; remove heavily infected leaves in nurseries."
+  chemical:
+    - {ai: propiconazole, group: FRAC 3, note: nurseries / seed cane only}
+  preventive:
+    - "Plant resistant varieties."
+  refs: [pv_sugarcane]
+
+Sugarcane___Smut:
+  name: Whip smut
+  kind: fungal
+  pathogen: Sporisorium scitamineum
+  parts: [shoot apex, whole stool]
+  symptoms: A long, black, whip-like structure emerges from the top of the cane; thin, grassy shoots.
+  causes: Infected setts and airborne spores.
+  conditions: Hot, dry weather; ratoon crops.
+  immediate:
+    - "Cover the whip with a bag, then uproot and burn the whole stool before spores spread."
+  organic:
+    - "Hot-water treatment of setts; avoid ratooning infected fields."
+  chemical:
+    - {ai: propiconazole (sett dip), group: FRAC 3}
+  preventive:
+    - "Plant disease-free, resistant setts."
+  refs: [pv_sugarcane]
+
+Sugarcane___Pokkah_boeng:
+  name: Pokkah boeng
+  kind: fungal
+  pathogen: Fusarium spp. (F. moniliforme / F. sacchari complex)
+  parts: [young leaves, spindle, stem top]
+  symptoms: Chlorotic, wrinkled, twisted young leaves at the top of the cane; in severe cases a knife-cut appearance and top rot.
+  causes: Airborne spores entering the spindle.
+  conditions: Humid monsoon weather following dry spells.
+  risk: {t: [20, 32], rh: 85, hours: 12}
+  immediate:
+    - "Remove severely affected tops."
+  organic:
+    - "Balanced fertilization."
+  chemical:
+    - {ai: carbendazim, group: FRAC 1}
+    - {ai: copper oxychloride, group: FRAC M01}
+  preventive:
+    - "Tolerant varieties."
+  refs: [pv_sugarcane]
+
+Sugarcane___Sett_rot:
+  name: Sett rot (pineapple disease)
+  kind: fungal
+  pathogen: Ceratocystis paradoxa (Thielaviopsis paradoxa)
+  parts: [setts, young shoots]
+  symptoms: Setts rot internally with a pineapple smell and turn black; poor germination and gaps in the field.
+  causes: Soil-borne fungus entering the cut ends of setts.
+  conditions: Cold or waterlogged soil after planting.
+  immediate:
+    - "Gap-fill with healthy setts."
+  organic:
+    - "Plant in warm, well-drained soil."
+  chemical:
+    - {ai: carbendazim (sett dip), group: FRAC 1}
+    - {ai: propiconazole (sett dip), group: FRAC 3}
+  preventive:
+    - "Treat setts before planting; avoid planting in cold, waterlogged soil."
+  refs: [pv_sugarcane]
+
+Sugarcane___Brown_spot:
+  name: Brown spot
+  kind: fungal
+  pathogen: Cercospora longipes
+  parts: [leaves]
+  symptoms: Oval reddish-brown spots with a yellow halo, mostly on older leaves.
+  causes: Airborne spores.
+  conditions: Warm, humid weather.
+  risk: {t: [22, 32], rh: 85, hours: 12}
+  immediate:
+    - "Usually minor — monitor."
+  organic:
+    - "Balanced fertilization; remove dry trash."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+  preventive:
+    - "Resistant varieties."
+  refs: [pv_sugarcane]
+
+Sugarcane___Yellow_leaf:
+  name: Yellow leaf
+  kind: viral
+  pathogen: Sugarcane yellow leaf virus (spread by aphids and infected setts)
+  parts: [leaf midrib, leaves]
+  symptoms: Yellowing of the leaf midrib on the underside, spreading to the blade; later the whole leaf yellows and dries.
+  causes: Virus in planting material; aphid vectors.
+  conditions: Late season stress.
+  immediate:
+    - "No cure; mark affected stools."
+  organic:
+    - "Use healthy seed cane."
+  chemical: []
+  preventive:
+    - "Tissue-culture or certified virus-free seed cane; tolerant varieties."
+  refs: [pv_sugarcane]
+
+Sugarcane___Mosaic_virus:
+  name: Mosaic (viral)
+  kind: viral
+  pathogen: Sugarcane mosaic virus / sorghum mosaic virus (aphid-transmitted)
+  parts: [leaves]
+  symptoms: Light-green and dark-green mottled stripes on young leaves; stunting.
+  causes: Infected setts and aphids.
+  conditions: Aphid flights; infected neighbouring crops (maize, sorghum).
+  immediate:
+    - "Rogue infected stools in seed plots."
+  organic:
+    - "Control grassy weeds that host the virus."
+  chemical: []
+  preventive:
+    - "Healthy seed cane; resistant varieties."
+  refs: [pv_sugarcane]
+
+Sugarcane___Grassy_shoot:
+  name: Grassy shoot
+  kind: phytoplasma
+  pathogen: Sugarcane grassy shoot phytoplasma (spread by setts and leafhoppers)
+  parts: [whole stool]
+  symptoms: Many thin, pale or white grassy tillers; no millable canes.
+  causes: Phytoplasma in setts; insect vectors.
+  conditions: Ratoon crops from infected stock.
+  immediate:
+    - "Uproot and destroy affected stools."
+  organic:
+    - "Hot-air / moist-hot-air treatment of setts."
+  chemical: []
+  preventive:
+    - "Plant healthy, treated setts; avoid ratooning infected fields."
+  refs: [pv_sugarcane]
+
+Sugarcane___Banded_chlorosis:
+  name: Banded chlorosis
+  kind: abiotic
+  pathogen: Physiological (cold injury)
+  parts: [leaves]
+  symptoms: Pale green to white bands across the leaf blade.
+  causes: Exposure to low temperatures (below about 8 °C) during leaf development.
+  conditions: Cold winter nights.
+  immediate:
+    - "No treatment needed; new leaves are normal once it warms up."
+  organic:
+    - "Light irrigation before forecast frost can reduce cold injury."
+  chemical: []
+  preventive:
+    - "Plant at the recommended time."
+  refs: [pv_sugarcane]
+
+# ───────────── Maize ─────────────
+Corn___Common_rust:
+  name: Common rust
+  kind: fungal
+  pathogen: Puccinia sorghi
+  parts: [leaves]
+  symptoms: Small cinnamon-brown powdery pustules on both leaf surfaces.
+  causes: Airborne spores.
+  conditions: Cool (16–23 °C), humid weather with dew.
+  risk: {t: [16, 25], rh: 90, hours: 8, months: [2, 3, 4, 5, 9, 10, 11]}
+  immediate:
+    - "Fungicide only justified on susceptible hybrids before tasselling."
+  organic:
+    - "Resistant hybrids are the main control."
+  chemical:
+    - {ai: azoxystrobin, group: FRAC 11}
+    - {ai: propiconazole, group: FRAC 3}
+  preventive:
+    - "Plant resistant hybrids."
+  refs: [ucipm_corn, pv_corn]
+
+Corn___Northern_Leaf_Blight:
+  name: Northern leaf blight (Turcicum blight)
+  kind: fungal
+  pathogen: Exserohilum turcicum (Setosphaeria turcica)
+  parts: [leaves]
+  symptoms: Long (2.5–15 cm), cigar-shaped grey-green to tan lesions.
+  causes: Fungus surviving on infected residue.
+  conditions: Moderate temperatures (18–27 °C) with long dew periods.
+  risk: {t: [18, 27], rh: 90, hours: 10, months: [3, 4, 5, 8, 9, 10, 11]}
+  immediate:
+    - "Treat at early tasselling if lesions are on the third leaf below the ear or higher."
+  organic:
+    - "Manage residue; rotate crops."
+  chemical:
+    - {ai: azoxystrobin + propiconazole, group: FRAC 11 + 3}
+    - {ai: mancozeb, group: FRAC M03}
+  preventive:
+    - "Resistant hybrids; rotation."
+  refs: [ucipm_corn, pv_corn]
+
+Corn___Cercospora_leaf_spot Gray_leaf_spot:
+  name: Gray leaf spot
+  kind: fungal
+  pathogen: Cercospora zeae-maydis
+  parts: [leaves]
+  symptoms: Long, narrow, rectangular tan-grey lesions bounded by leaf veins.
+  causes: Fungus surviving on maize residue.
+  conditions: Warm, very humid weather, fog or long leaf wetness.
+  risk: {t: [22, 30], rh: 90, hours: 12, months: [3, 4, 5, 8, 9, 10, 11]}
+  immediate:
+    - "Fungicide if lesions reach upper leaves before tasselling on susceptible hybrids."
+  organic:
+    - "Rotation; residue management."
+  chemical:
+    - {ai: azoxystrobin, group: FRAC 11}
+    - {ai: pyraclostrobin, group: FRAC 11}
+    - {ai: propiconazole, group: FRAC 3}
+  preventive:
+    - "Tolerant hybrids."
+  refs: [ucipm_corn, pv_corn]
+
+Corn___Fall_armyworm:
+  name: Fall armyworm
+  kind: pest
+  pathogen: Spodoptera frugiperda (moth larva) — invasive in Pakistan since 2019
+  parts: [whorl leaves, tassel, cob]
+  symptoms: Ragged holes and 'window panes' on whorl leaves, wet sawdust-like frass in the whorl; larvae with an inverted Y on the head.
+  causes: Fall armyworm larvae.
+  conditions: Warm weather; late or staggered planting.
+  immediate:
+    - "Scout 20 plants in a W-pattern; act when the share of damaged whorls passes the local threshold."
+    - "Target young larvae — older larvae deep in the whorl are hard to reach."
+  organic:
+    - "Hand-pick egg masses and larvae; apply sand/ash or soil into the whorl on small plots."
+    - "Bacillus thuringiensis (Bt) or neem sprays on young larvae; conserve parasitoids."
+  chemical:
+    - {ai: emamectin benzoate, group: IRAC 6}
+    - {ai: chlorantraniliprole, group: IRAC 28}
+    - {ai: spinetoram, group: IRAC 5}
+    - {ai: Bacillus thuringiensis, group: IRAC 11A}
+  preventive:
+    - "Timely, synchronised planting; pheromone traps for monitoring."
+  refs: [fao_faw, ucipm_corn]
+
+# ───────────── Soybean / bean ─────────────
+Soybean___Caterpillar_damage:
+  name: Caterpillar defoliation
+  kind: pest
+  pathogen: Leaf-feeding caterpillars (e.g. loopers, armyworms, velvetbean caterpillar)
+  parts: [leaves]
+  symptoms: Irregular holes and ragged leaf edges; heavy feeding skeletonises leaves.
+  causes: Moth larvae.
+  conditions: Warm weather.
+  immediate:
+    - "Estimate % defoliation; treat only above local action thresholds."
+  organic:
+    - "Bt or neem on young larvae; conserve natural enemies."
+  chemical:
+    - {ai: Bacillus thuringiensis, group: IRAC 11A}
+    - {ai: chlorantraniliprole, group: IRAC 28}
+  preventive:
+    - "Weekly scouting."
+  refs: [ucipm_beans]
+
+Soybean___Diabrotica_beetle_damage:
+  name: Diabrotica beetle damage
+  kind: pest
+  pathogen: Diabrotica speciosa (leaf beetle)
+  parts: [leaves, roots (larvae)]
+  symptoms: Small round holes scattered across leaves.
+  causes: Adult beetle feeding.
+  conditions: Young crops.
+  immediate:
+    - "Treat only if defoliation threatens young plants."
+  organic:
+    - "Crop rotation."
+  chemical: []
+  preventive:
+    - "Rotation; scouting."
+  refs: [ucipm_beans]
+
+Bean___Angular_leaf_spot:
+  name: Angular leaf spot
+  kind: fungal
+  pathogen: Pseudocercospora griseola
+  parts: [leaves, pods]
+  symptoms: Angular brown spots limited by leaf veins giving a checkerboard look; reddish-brown spots on pods.
+  causes: Seed-borne and residue-borne fungus.
+  conditions: Warm, wet weather.
+  risk: {t: [18, 28], rh: 90, hours: 12}
+  immediate:
+    - "Remove badly infected plants."
+  organic:
+    - "Clean seed; rotate 2 years; bury residue."
+  chemical:
+    - {ai: mancozeb, group: FRAC M03}
+    - {ai: azoxystrobin, group: FRAC 11}
+  preventive:
+    - "Tolerant varieties; certified seed."
+  refs: [ucipm_beans]
+
+Bean___Rust:
+  name: Bean rust
+  kind: fungal
+  pathogen: Uromyces appendiculatus
+  parts: [leaves, pods]
+  symptoms: Small reddish-brown powdery pustules, often with a yellow halo, mostly on leaf undersides.
+  causes: Airborne spores; volunteer beans.
+  conditions: Moderate temperatures with long dew periods.
+  risk: {t: [17, 27], rh: 95, hours: 10}
+  immediate:
+    - "Spray at first pustules in humid weather if the crop is young."
+  organic:
+    - "Remove volunteers and debris; avoid dense planting."
+  chemical:
+    - {ai: sulfur, group: FRAC M02}
+    - {ai: tebuconazole, group: FRAC 3}
+  preventive:
+    - "Resistant varieties."
+  refs: [ucipm_beans]

@@ -1,0 +1,43 @@
+# Local development:   docker compose --profile dev up --build
+# Production (single VM): set .env (PD_ENV=production, PD_DB_URL, secrets) then
+#                      DOMAIN=plantdoctor.example.com docker compose --profile prod up -d --build
+services:
+  app:
+    build: .
+    env_file: [.env]
+    environment:
+      PD_DB_URL: ${PD_DB_URL:-postgresql+psycopg://plantdoctor:plantdoctor@db:5432/plantdoctor}
+      PD_DATA_DIR: /data
+    volumes: [appdata:/data]
+    depends_on:
+      db: { condition: service_healthy }
+    restart: unless-stopped
+    profiles: [dev, prod]
+    ports: ["127.0.0.1:8000:8000"]
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: plantdoctor
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-plantdoctor}
+      POSTGRES_DB: plantdoctor
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U plantdoctor"], interval: 5s, retries: 10 }
+    restart: unless-stopped
+    profiles: [dev, prod]
+
+  mailpit:            # dev only: catches outgoing email at http://127.0.0.1:8025
+    image: axllent/mailpit:latest
+    ports: ["127.0.0.1:8025:8025"]
+    profiles: [dev]
+
+  caddy:              # prod only: TLS termination with automatic Let's Encrypt certificates
+    image: caddy:2-alpine
+    ports: ["80:80", "443:443"]
+    environment: { DOMAIN: "${DOMAIN:-localhost}" }
+    volumes: [./deploy/Caddyfile:/etc/caddy/Caddyfile:ro, caddydata:/data]
+    depends_on: [app]
+    restart: unless-stopped
+    profiles: [prod]
+
+volumes: { appdata: {}, pgdata: {}, caddydata: {} }
