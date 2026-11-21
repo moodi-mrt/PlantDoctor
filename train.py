@@ -1,20 +1,4 @@
-"""
-PlantDoctor — training script.
-
-Fine-tunes an ImageNet-pretrained EfficientNet-B0 on the PlantVillage dataset
-(39 classes: 38 crop/disease classes + 1 "background / no leaf" class).
-
-Usage:
-    .venv/bin/python train.py                 # full run (defaults below)
-    .venv/bin/python train.py --epochs 2      # quick run
-
-Outputs (in ./models and ./reports):
-    models/plantdoctor_effnetb0.pt   weights + class list + normalisation
-    reports/history.json             loss / accuracy per epoch
-    reports/test_metrics.json        accuracy, per-class precision/recall/F1
-    reports/confusion_matrix.npy     raw confusion matrix on the test split
-    reports/split.json               exact file lists used for train/val/test
-"""
+"""PlantDoctor — EfficientNet-B0 fine-tuning script."""
 import argparse
 import json
 import random
@@ -34,7 +18,6 @@ MEAN, STD = [0.485, 0.456, 0.406], [0.229, 0.224, 0.225]
 
 
 def find_data_dir(raw: Path) -> Path:
-    """Locate the folder whose sub-folders are the class folders."""
     for p in [raw, *sorted(raw.rglob("*"))]:
         if p.is_dir():
             subs = [s for s in p.iterdir() if s.is_dir()]
@@ -44,9 +27,6 @@ def find_data_dir(raw: Path) -> Path:
 
 
 def stratified_split(class_dirs: list, base: Path, seed: int, val=0.1, test=0.1):
-    """class_dirs: folders whose sub-folders are classes. A class name may appear
-    in several of them (e.g. PlantVillage lab photos + PlantDoc field photos);
-    their images are pooled. Paths are stored relative to `base`."""
     rng = random.Random(seed)
     classes = sorted({d.name for cd in class_dirs for d in cd.iterdir() if d.is_dir() and not d.name.startswith(".")})
     split = {"train": [], "val": [], "test": []}
@@ -79,9 +59,6 @@ class LeafDataset(Dataset):
 
 
 def build_transforms(size=224):
-    # Heavy-ish augmentation: PlantVillage photos are all taken on a plain
-    # background under uniform light, so we deliberately perturb colour,
-    # scale, orientation and blur to make the model less brittle.
     train_tf = transforms.Compose([
         transforms.RandomResizedCrop(size, scale=(0.4, 1.0)),
         transforms.RandomHorizontalFlip(),
@@ -132,7 +109,8 @@ def run_epoch(model, loader, device, criterion, optimizer=None, scaler=None, sch
         correct += (p == y).sum().item()
         n += x.size(0)
         if not train:
-            preds_all.append(out.float().topk(5, 1).indices.cpu()); ys_all.append(y.cpu())
+            preds_all.append(out.float().topk(5, 1).indices.cpu())
+            ys_all.append(y.cpu())
         if train and step % 100 == 0:
             print(f"    step {step:4d}/{len(loader)}  loss {tot_loss/n:.4f}  acc {correct/n:.4f}  "
                   f"({time.time()-t0:.0f}s)", flush=True)
@@ -154,15 +132,13 @@ def per_class_report(cm, classes):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default=str(ROOT / "data" / "raw"))
-    ap.add_argument("--extra", default=str(ROOT / "data" / "extra"),
-                    help="extra class folders (field photos, fruits, vegetables); '' to disable")
-    ap.add_argument("--field-repeat", type=int, default=3,
-                    help="repeat real-world (non-PlantVillage) training images this many times per epoch")
-    ap.add_argument("--init", default="", help="start from this checkpoint's backbone instead of ImageNet")
+    ap.add_argument("--extra", default=str(ROOT / "data" / "extra"))
+    ap.add_argument("--out", default=str(ROOT / "models" / "plantdoctor_effnetb0.pt"))
+    ap.add_argument("--field-repeat", type=int, default=3)
     ap.add_argument("--epochs", type=int, default=6)
     ap.add_argument("--batch", type=int, default=48)
     ap.add_argument("--lr", type=float, default=1e-3)
-    ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 
@@ -177,38 +153,32 @@ def main():
     classes, split = stratified_split(class_dirs, data_dir, args.seed)
     print(f"Data: {', '.join(map(str, class_dirs))}\nClasses: {len(classes)} | train {len(split['train'])} "
           f"val {len(split['val'])} test {len(split['test'])}")
-    # PlantVillage dominates by count; repeat the real-world photos so the model
-    # sees enough cluttered, naturally lit images (the app's actual use case).
+
     pv_rel = str(pv_dir.relative_to(data_dir))
     field = [it for it in split["train"] if not it[0].startswith(pv_rel)]
     split_train = split["train"] + field * (args.field_repeat - 1)
     print(f"Real-world training images: {len(field)} (x{args.field_repeat} per epoch)")
 
-    (ROOT / "models").mkdir(exist_ok=True); (ROOT / "reports").mkdir(exist_ok=True)
-    json.dump({"data_dir": str(data_dir), "classes": classes, **split},
-              open(ROOT / "reports" / "split.json", "w"))
+    out_path = Path(args.out)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    (ROOT / "reports").mkdir(exist_ok=True)
+    (ROOT / "reports" / "split.json").write_text(json.dumps({"data_dir": str(data_dir), "classes": classes, **split}))
     counts = Counter(y for _, y in split["train"])
-    json.dump({classes[k]: v for k, v in sorted(counts.items())},
-              open(ROOT / "reports" / "class_counts_train.json", "w"), indent=1)
+    (ROOT / "reports" / "class_counts_train.json").write_text(
+        json.dumps({classes[k]: v for k, v in sorted(counts.items())}, indent=1)
+    )
 
     train_tf, eval_tf = build_transforms()
     mk = lambda items, tf, shuf: DataLoader(
         LeafDataset(data_dir, items, tf), batch_size=args.batch, shuffle=shuf,
-        num_workers=args.workers, pin_memory=True, persistent_workers=True, drop_last=shuf)
+        num_workers=args.workers, pin_memory=True, persistent_workers=args.workers > 0, drop_last=shuf)
     train_dl, val_dl, test_dl = mk(split_train, train_tf, True), mk(split["val"], eval_tf, False), mk(split["test"], eval_tf, False)
 
-    model = build_model(len(classes))
-    if args.init:
-        ck = torch.load(args.init, map_location="cpu", weights_only=False)
-        sd = {k: v for k, v in ck["state_dict"].items() if not k.startswith("classifier")}
-        model.load_state_dict(sd, strict=False)
-        print(f"Backbone initialised from {args.init}")
-    model = model.to(device)
+    model = build_model(len(classes)).to(device)
     criterion = nn.CrossEntropyLoss(label_smoothing=0.1)
     scaler = torch.amp.GradScaler(enabled=device.type == "cuda")
     history = []
 
-    # ---- Stage 1: warm up the new classifier head with the backbone frozen.
     for p in model.features.parameters():
         p.requires_grad = False
     opt = torch.optim.AdamW(model.classifier.parameters(), lr=args.lr, weight_decay=1e-4)
@@ -218,29 +188,28 @@ def main():
     history.append({"epoch": 1, "stage": "head", "train_loss": tl, "train_acc": ta, "val_loss": vl, "val_acc": va})
     print(f"  epoch 1  train {tl:.4f}/{ta:.4f}  val {vl:.4f}/{va:.4f}")
 
-    # ---- Stage 2: unfreeze everything, lower LR, one-cycle cosine schedule.
+    best_va, best_state = va, {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
     for p in model.parameters():
         p.requires_grad = True
-    ft_epochs = args.epochs - 1
-    opt = torch.optim.AdamW(model.parameters(), lr=args.lr / 3, weight_decay=1e-4)
-    sched = torch.optim.lr_scheduler.OneCycleLR(opt, max_lr=args.lr / 3, total_steps=ft_epochs * len(train_dl), pct_start=0.15)
-    best_va, best_state = 0.0, None
-    print(f"\n== Stage 2: full fine-tune ({ft_epochs} epochs) ==")
-    for e in range(ft_epochs):
-        tl, ta, _ = run_epoch(model, train_dl, device, criterion, opt, scaler, sched)
-        vl, va, _ = run_epoch(model, val_dl, device, criterion)
-        history.append({"epoch": e + 2, "stage": "finetune", "train_loss": tl, "train_acc": ta, "val_loss": vl, "val_acc": va})
-        print(f"  epoch {e+2}  train {tl:.4f}/{ta:.4f}  val {vl:.4f}/{va:.4f}")
-        if va >= best_va:
-            best_va, best_state = va, {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
-        json.dump(history, open(ROOT / "reports" / "history.json", "w"), indent=1)
+    ft_epochs = max(0, args.epochs - 1)
+    if ft_epochs > 0:
+        opt = torch.optim.AdamW(model.parameters(), lr=args.lr / 3, weight_decay=1e-4)
+        sched = torch.optim.lr_scheduler.OneCycleLR(opt, max_lr=args.lr / 3, total_steps=ft_epochs * len(train_dl), pct_start=0.15)
+        print(f"\n== Stage 2: full fine-tune ({ft_epochs} epochs) ==")
+        for e in range(ft_epochs):
+            tl, ta, _ = run_epoch(model, train_dl, device, criterion, opt, scaler, sched)
+            vl, va, _ = run_epoch(model, val_dl, device, criterion)
+            history.append({"epoch": e + 2, "stage": "finetune", "train_loss": tl, "train_acc": ta, "val_loss": vl, "val_acc": va})
+            print(f"  epoch {e+2}  train {tl:.4f}/{ta:.4f}  val {vl:.4f}/{va:.4f}")
+            if va >= best_va:
+                best_va, best_state = va, {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
+            (ROOT / "reports" / "history.json").write_text(json.dumps(history, indent=1))
 
     model.load_state_dict(best_state)
     torch.save({"arch": "efficientnet_b0", "classes": classes, "mean": MEAN, "std": STD,
-                "img_size": 224, "state_dict": best_state, "val_acc": best_va},
-               ROOT / "models" / "plantdoctor_effnetb0.pt")
+                "img_size": 224, "state_dict": best_state, "val_acc": best_va}, out_path)
+    print(f"Saved EfficientNet-B0 checkpoint -> {out_path.resolve()}")
 
-    # ---- Final evaluation on the held-out test split (never seen in training).
     tl, tacc, (top5, ys) = run_epoch(model, test_dl, device, criterion)
     pred = top5[:, 0]
     top5_acc = float((top5 == ys[:, None]).any(1).mean())
@@ -251,10 +220,12 @@ def main():
     np.save(ROOT / "reports" / "confusion_matrix.npy", cm)
     rep = per_class_report(cm, classes)
     macro_f1 = float(np.mean([r["f1"] for r in rep.values()]))
-    json.dump({"test_acc": tacc, "test_loss": tl, "macro_f1": macro_f1, "best_val_acc": best_va,
-               "top5_acc": top5_acc, "crop_acc": crop_acc,
-               "n_test": int(len(ys)), "per_class": rep}, open(ROOT / "reports" / "test_metrics.json", "w"), indent=1)
-    print(f"\nTEST accuracy {tacc:.4f}  macro-F1 {macro_f1:.4f}")
+    (ROOT / "reports" / "test_metrics.json").write_text(json.dumps({
+        "test_acc": tacc, "test_loss": tl, "macro_f1": macro_f1, "best_val_acc": best_va,
+        "top5_acc": top5_acc, "crop_acc": crop_acc,
+        "n_test": int(len(ys)), "per_class": rep
+    }, indent=1))
+    print(f"\nEFFNET-B0 TEST accuracy {tacc:.4f}  macro-F1 {macro_f1:.4f}")
 
 
 if __name__ == "__main__":
